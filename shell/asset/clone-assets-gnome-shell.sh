@@ -13,10 +13,10 @@
 SRC_DIR="assets-gnome-shell"
 ASSETS_DIR="../gnome-shell"
 ASSETS_LIGHT_DIR="../gnome-shell-brila"
-ASSETS_DARK_DIR="../gnome-shell-nokto"
+ASSETS_DARK_DIR="../gnome-shell-midnight"
 ASSETS_ETA_DIR="../gnome-shell-eta"
 ASSETS_LIGHT_ETA_DIR="../gnome-shell-brila-eta"
-ASSETS_DARK_ETA_DIR="../gnome-shell-nokto-eta"
+ASSETS_DARK_ETA_DIR="../gnome-shell-midnight-eta"
 INDEX="assets-gnome-shell.txt"
 KEY_FILE="../../gtk/sass/common/resources/_key_colors.scss"
 

@@ -17,7 +17,7 @@ SRC_DARK_DIR="assets-cinnamon/dark/misc"
 SRC_LIGHT_DIR="assets-cinnamon/light/misc"
 ASSETS_DIR="../cinnamon/assets"
 ASSETS_LIGHT_DIR="../cinnamon-brila/assets"
-ASSETS_DARK_DIR="../cinnamon-nokto/assets"
+ASSETS_DARK_DIR="../cinnamon-midnight/assets"
 KEY_FILE="../../gtk/sass/common/resources/_key_colors.scss"
 THUMB="thumbnail"
 

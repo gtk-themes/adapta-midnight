@@ -11,7 +11,7 @@
 #
 
 SRC_LIGHT_FILE="./light/ColorDeck-adapta.cdk"
-SRC_DARK_FILE="./dark/ColorDeck-adapta-nokto.cdk"
+SRC_DARK_FILE="./dark/ColorDeck-adapta-midnight.cdk"
 COL_FILE="../../gtk/sass/common/_colors.scss"
 KEY_FILE="../../gtk/sass/common/resources/_key_colors.scss"
 

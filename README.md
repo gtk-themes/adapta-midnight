@@ -41,7 +41,7 @@ Variant Matrix
 [check-on]: https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-on.png
 [check-off]: https://github.com/adapta-project/adapta-github-resources/blob/master/images/check-off.png
 
-| |Adapta|Adapta-Brila|Adapta-Nokto|Adapta-Eta|Adapta-Brila-Eta|Adapta-Nokto-Eta|
+| |Adapta|Adapta-Brila|Adapta-Midnight|Adapta-Eta|Adapta-Brila-Eta|Adapta-Midnight-Eta|
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
 |Gtk+ 2.24.x |![check-on]|![check-on]|![check-on]|![check-on]|![check-on]|![check-on]|
 |Gtk+ 3.20.x |![check-on]|![check-on]|![check-on]|![check-on]|![check-on]|![check-on]|
@@ -57,7 +57,7 @@ Variant Matrix
 > **Note:**
 >
 >   * **Brila** is a complete light variant.
->   * **Nokto** is a dark variant.
+>   * **Midnight** is a dark variant.
 >   * **Eta** is a tiny Gtk+ 2.x/3.2x Gtk+ widget variant for saving space.
 >   * I suggest you use the Eta variants if your LCD resolution is lower than FHD (1080p). Eta draws widgets around -20% to -30% spacing.
 >   * Metacity theming supports Eta variants (>= 3.2x).
@@ -121,9 +121,9 @@ Installation from Git Source
 1. If previous versions were installed/existed, remove them first.
 
  ```
- sudo rm -rf /usr/share/themes/{Adapta,Adapta-Eta,Adapta-Brila,Adapta-Brila-Eta,Adapta-Nokto,Adapta-Nokto-Eta}
- rm -rf ~/.local/share/themes/{Adapta,Adapta-Eta,Adapta-Brila,Adapta-Brila-Eta,Adapta-Nokto,Adapta-Nokto-Eta}
- rm -rf ~/.themes/{Adapta,Adapta-Eta,Adapta-Brila,Adapta-Brila-Eta,Adapta-Nokto,Adapta-Nokto-Eta}
+ sudo rm -rf /usr/share/themes/{Adapta,Adapta-Eta,Adapta-Brila,Adapta-Brila-Eta,Adapta-Midnight,Adapta-Midnight-Eta}
+ rm -rf ~/.local/share/themes/{Adapta,Adapta-Eta,Adapta-Brila,Adapta-Brila-Eta,Adapta-Midnight,Adapta-Midnight-Eta}
+ rm -rf ~/.themes/{Adapta,Adapta-Eta,Adapta-Brila,Adapta-Brila-Eta,Adapta-Midnight,Adapta-Midnight-Eta}
  ```
 
 2. Check build-requirements:
@@ -234,7 +234,7 @@ Installation from Git Source
 
 GtkSourceView/Gedit Color Scheme Support
 ----------------------------------------
- A theme file `adapta.xml` is installed by default into `Adapta(-Nokto)/gedit` directory, and `adapta-brila.xml` is installed into `Adapta-Brila/gedit` directory.
+ A theme file `adapta.xml` is installed by default into `Adapta(-Midnight)/gedit` directory, and `adapta-brila.xml` is installed into `Adapta-Brila/gedit` directory.
  See details in [**README.md**](/extra/gedit/README.md).
 
  > **Note:**
@@ -257,7 +257,7 @@ Extra Browser Support
 
   2. [**Adapta-Brila**](https://mozilla.github.io/FirefoxColor/?theme=XQAAAAL8AAAAAAAAAABBKYhm849SCia2CaaEGccwS-xNKliFvd9NUAF6ENY3kBjKL2oHo45W2-O_o0hH8v9jyb1gPLS8xyg3NbO0xf8CWW1IQ-VFBeST-c2ya550Jq-AJT3qXk84PCZgv4Q1Ip6G8KMxah3hVdR8-Zr9ze0kGqgOtR7bn1Nps1cYGNzQQkA8ajSLlQnjaMNzy_Cgfm6TGsTtSGCZPEHAaGevqPSrPV7L_8f2AAA)
 
-  3. [**Adapta-Nokto**](https://mozilla.github.io/FirefoxColor/?theme=XQAAAAL8AAAAAAAAAABBKYhm849SCia2CaaEGccwS-xNKlhR4U3ii01izoNSwV8EzxA9i34l-h9kNzmmbht5egIz1VwqGu4asy3bC0Iu-fSfcIJAVAwKwUYrdnMCFPHjDRh3WIEk3D10l1b0yhJ2JJ4iidXrDdOeHtPXECgT4mWPRinIv4rInTDn_LmydH4PXIv_OPeKQZiffADmQZvxlSWtpsLQfUznQX8sEtOtxfBaEVM7_-LnUAA)
+  3. [**Adapta-Midnight**](https://mozilla.github.io/FirefoxColor/?theme=XQAAAAL8AAAAAAAAAABBKYhm849SCia2CaaEGccwS-xNKlhR4U3ii01izoNSwV8EzxA9i34l-h9kNzmmbht5egIz1VwqGu4asy3bC0Iu-fSfcIJAVAwKwUYrdnMCFPHjDRh3WIEk3D10l1b0yhJ2JJ4iidXrDdOeHtPXECgT4mWPRinIv4rInTDn_LmydH4PXIv_OPeKQZiffADmQZvxlSWtpsLQfUznQX8sEtOtxfBaEVM7_-LnUAA)
 
  > **Note:**
  >
@@ -303,7 +303,7 @@ Extra Telegram Support
  --enable-telegram      enable Telegram 1.0 support (type: bool)
  ```
 
- The installer installs compressed `tdesktop-theme` files into `Adapta/telegram`, `Adapta-Brila/telegram` and `Adapta-Nokto/telegram` directories if Telegram support is enabled.
+ The installer installs compressed `tdesktop-theme` files into `Adapta/telegram`, `Adapta-Brila/telegram` and `Adapta-Midnight/telegram` directories if Telegram support is enabled.
  Then open the file via Telegram > Main Menu > Settings > Chat background > Choose from file.
 
  > **Note:**
@@ -333,7 +333,7 @@ Other Projects
 ------
 This is a list of community projects, related to Adapta:
  - [**Adapta KDE**](https://github.com/PapirusDevelopmentTeam/adapta-kde) - Port of this theme to KDE Plasma 5.
- - [**Discord-Adapta-Nokto**](https://github.com/Scrumplex/Discord-Adpata-Nokto) - Adapta-oriented theme for Discord
+ - [**Discord-Adapta-Midnight**](https://github.com/Scrumplex/Discord-Adpata-Midnight) - Adapta-oriented theme for Discord
 
 Work in Progress
 ----------------

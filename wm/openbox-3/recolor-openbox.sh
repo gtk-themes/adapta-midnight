@@ -13,7 +13,7 @@
 SRC_DIR="."
 RECOLOR_FILE1="themerc"
 RECOLOR_FILE2="themerc-brila"
-RECOLOR_FILE3="themerc-nokto"
+RECOLOR_FILE3="themerc-midnight"
 COL_FILE="../../gtk/sass/common/_colors.scss"
 KEY_FILE="../../gtk/sass/common/resources/_key_colors.scss"
 

@@ -1,10 +1,10 @@
 themedir     = $(datadir)/themes
 adaptadir    = $(DESTDIR)$(themedir)/Adapta
 briladir     = $(DESTDIR)$(themedir)/Adapta-Brila
-noktodir     = $(DESTDIR)$(themedir)/Adapta-Nokto
+midnightdir     = $(DESTDIR)$(themedir)/Adapta-Midnight
 adaptaetadir = $(DESTDIR)$(themedir)/Adapta-Eta
 brilaetadir  = $(DESTDIR)$(themedir)/Adapta-Brila-Eta
-noktoetadir  = $(DESTDIR)$(themedir)/Adapta-Nokto-Eta
+midnightetadir  = $(DESTDIR)$(themedir)/Adapta-Midnight-Eta
 
 metacitydir   = $(srcdir)/metacity-1
 metacity_xml_file = \
@@ -204,8 +204,8 @@ openbox_file = \
 	$(openboxdir)/shade.xbm
 openbox_rc_file = \
 	$(openboxdir)/themerc
-openbox_rc_nokto_file = \
-	$(openboxdir)/themerc-nokto
+openbox_rc_midnight_file = \
+	$(openboxdir)/themerc-midnight
 openbox_rc_brila_file = \
 	$(openboxdir)/themerc-brila
 openbox_compton_file = \
@@ -275,12 +275,12 @@ install-data-local:
 if ENABLE_FLASHBACK
 	$(MKDIR_P) $(adaptadir)/metacity-1
 	$(MKDIR_P) $(briladir)/metacity-1
-	$(MKDIR_P) $(noktodir)/metacity-1
+	$(MKDIR_P) $(midnightdir)/metacity-1
 	cp -Rv $(metacity_xml_file) $(adaptadir)/metacity-1
-	cp -Rv $(metacity_xml_file) $(noktodir)/metacity-1
+	cp -Rv $(metacity_xml_file) $(midnightdir)/metacity-1
 	cp -Rv $(metacity_brila_xml_file) $(briladir)/metacity-1
 	cp -Rv $(metacity_asset_file) $(adaptadir)/metacity-1
-	cp -Rv $(metacity_asset_file) $(noktodir)/metacity-1
+	cp -Rv $(metacity_asset_file) $(midnightdir)/metacity-1
 	cp -Rv $(metacity_brila_asset_file) $(briladir)/metacity-1
 endif
 
@@ -288,12 +288,12 @@ if ENABLE_CINNAMON
 if !ENABLE_FLASHBACK
 	$(MKDIR_P) $(adaptadir)/metacity-1
 	$(MKDIR_P) $(briladir)/metacity-1
-	$(MKDIR_P) $(noktodir)/metacity-1
+	$(MKDIR_P) $(midnightdir)/metacity-1
 	cp -Rv $(metacity_xml_file) $(adaptadir)/metacity-1
-	cp -Rv $(metacity_xml_file) $(noktodir)/metacity-1
+	cp -Rv $(metacity_xml_file) $(midnightdir)/metacity-1
 	cp -Rv $(metacity_brila_xml_file) $(briladir)/metacity-1
 	cp -Rv $(metacity_asset_file) $(adaptadir)/metacity-1
-	cp -Rv $(metacity_asset_file) $(noktodir)/metacity-1
+	cp -Rv $(metacity_asset_file) $(midnightdir)/metacity-1
 	cp -Rv $(metacity_brila_asset_file) $(briladir)/metacity-1
 endif
 endif
@@ -302,34 +302,34 @@ if ENABLE_MATE
 if !ENABLE_FLASHBACK
 	$(MKDIR_P) $(adaptadir)/metacity-1
 	$(MKDIR_P) $(briladir)/metacity-1
-	$(MKDIR_P) $(noktodir)/metacity-1
+	$(MKDIR_P) $(midnightdir)/metacity-1
 	cp -Rv $(metacity_xml_file) $(adaptadir)/metacity-1
-	cp -Rv $(metacity_xml_file) $(noktodir)/metacity-1
+	cp -Rv $(metacity_xml_file) $(midnightdir)/metacity-1
 	cp -Rv $(metacity_brila_xml_file) $(briladir)/metacity-1
 	cp -Rv $(metacity_asset_file) $(adaptadir)/metacity-1
-	cp -Rv $(metacity_asset_file) $(noktodir)/metacity-1
+	cp -Rv $(metacity_asset_file) $(midnightdir)/metacity-1
 	cp -Rv $(metacity_brila_asset_file) $(briladir)/metacity-1
 endif
 endif
 
 if ENABLE_XFCE
 	$(MKDIR_P) $(adaptadir)/xfwm4
-	$(MKDIR_P) $(noktodir)/xfwm4
+	$(MKDIR_P) $(midnightdir)/xfwm4
 	$(MKDIR_P) $(briladir)/xfwm4
 	cp -Rv $(xfwm_file) $(adaptadir)/xfwm4
-	cp -Rv $(xfwm_file) $(noktodir)/xfwm4
+	cp -Rv $(xfwm_file) $(midnightdir)/xfwm4
 	cp -Rv $(xfwm_brila_file) $(briladir)/xfwm4
 endif
 
 if ENABLE_OPENBOX
 	$(MKDIR_P) $(adaptadir)/openbox-3
-	$(MKDIR_P) $(noktodir)/openbox-3
+	$(MKDIR_P) $(midnightdir)/openbox-3
 	$(MKDIR_P) $(briladir)/openbox-3
 	cp -Rv $(openbox_file) $(adaptadir)/openbox-3
 	cp -Rv $(openbox_rc_file) $(adaptadir)/openbox-3/themerc
 	cp -Rv $(openbox_compton_file) $(adaptadir)/openbox-3/
-	cp -Rv $(openbox_file) $(noktodir)/openbox-3
-	cp -Rv $(openbox_rc_nokto_file) $(noktodir)/openbox-3/themerc
+	cp -Rv $(openbox_file) $(midnightdir)/openbox-3
+	cp -Rv $(openbox_rc_midnight_file) $(midnightdir)/openbox-3/themerc
 	cp -Rv $(openbox_file) $(briladir)/openbox-3
 	cp -Rv $(openbox_rc_brila_file) $(briladir)/openbox-3/themerc
 endif
@@ -340,14 +340,14 @@ endif
 
 uninstall-local:
 if ENABLE_FLASHBACK
-	test -e $(noktodir)/metacity-1 && rm -rfv $(noktodir)/metacity-1
+	test -e $(midnightdir)/metacity-1 && rm -rfv $(midnightdir)/metacity-1
 	test -e $(adaptadir)/metacity-1 && rm -rfv $(adaptadir)/metacity-1
 	test -e $(briladir)/metacity-1 && rm -rfv $(briladir)/metacity-1
 endif
 
 if ENABLE_CINNAMON
 if !ENABLE_FLASHBACK
-	test -e $(noktodir)/metacity-1 && rm -rfv $(noktodir)/metacity-1
+	test -e $(midnightdir)/metacity-1 && rm -rfv $(midnightdir)/metacity-1
 	test -e $(adaptadir)/metacity-1 && rm -rfv $(adaptadir)/metacity-1
 	test -e $(briladir)/metacity-1 && rm -rfv $(briladir)/metacity-1
 endif
@@ -355,20 +355,20 @@ endif
 
 if ENABLE_MATE
 if !ENABLE_FLASHBACK
-	test -e $(noktodir)/metacity-1 && rm -rfv $(noktodir)/metacity-1
+	test -e $(midnightdir)/metacity-1 && rm -rfv $(midnightdir)/metacity-1
 	test -e $(adaptadir)/metacity-1 && rm -rfv $(adaptadir)/metacity-1
 	test -e $(briladir)/metacity-1 && rm -rfv $(briladir)/metacity-1
 endif
 endif
 
 if ENABLE_XFCE
-	test -e $(noktodir)/xfwm4 && rm -rfv $(noktodir)/xfwm4
+	test -e $(midnightdir)/xfwm4 && rm -rfv $(midnightdir)/xfwm4
 	test -e $(briladir)/xfwm4 && rm -rfv $(briladir)/xfwm4
 	test -e $(adaptadir)/xfwm4 && rm -rfv $(adaptadir)/xfwm4
 endif
 
 if ENABLE_OPENBOX
-	test -e $(noktodir)/openbox-3 && rm -rfv $(noktodir)/openbox-3
+	test -e $(midnightdir)/openbox-3 && rm -rfv $(midnightdir)/openbox-3
 	test -e $(briladir)/openbox-3 && rm -rfv $(briladir)/openbox-3
 	test -e $(adaptadir)/openbox-3 && rm -rfv $(adaptadir)/openbox-3
 endif
@@ -432,7 +432,7 @@ CLEANFILES += \
 	$(openboxdir)/*.xbm \
 	$(openboxdir)/themerc \
 	$(openboxdir)/themerc-brila \
-	$(openboxdir)/themerc-nokto
+	$(openboxdir)/themerc-midnight
 endif
 
 DISTCLEANFILES = \

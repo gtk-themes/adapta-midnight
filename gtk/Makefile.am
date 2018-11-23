@@ -1,10 +1,10 @@
 themedir     = $(datadir)/themes
 adaptadir    = $(DESTDIR)$(themedir)/Adapta
 briladir     = $(DESTDIR)$(themedir)/Adapta-Brila
-noktodir     = $(DESTDIR)$(themedir)/Adapta-Nokto
+midnightdir     = $(DESTDIR)$(themedir)/Adapta-Midnight
 adaptaetadir = $(DESTDIR)$(themedir)/Adapta-Eta
 brilaetadir  = $(DESTDIR)$(themedir)/Adapta-Brila-Eta
-noktoetadir  = $(DESTDIR)$(themedir)/Adapta-Nokto-Eta
+midnightetadir  = $(DESTDIR)$(themedir)/Adapta-Midnight-Eta
 
 gtk3_assetdir = $(srcdir)/asset/assets-gtk3
 
@@ -38,15 +38,15 @@ gtk320brilaeta_file = \
 	$(gtk320brilaetadir)/gtk-dark.css \
 	$(gtk320brilaetadir)/gtk.gresource
 
-gtk320noktodir   = $(srcdir)/gtk-3.20-nokto
-gtk320nokto_file = \
-	$(gtk320noktodir)/gtk.css \
-	$(gtk320noktodir)/gtk.gresource
+gtk320midnightdir   = $(srcdir)/gtk-3.20-midnight
+gtk320midnight_file = \
+	$(gtk320midnightdir)/gtk.css \
+	$(gtk320midnightdir)/gtk.gresource
 
-gtk320noktoetadir   = $(srcdir)/gtk-3.20-nokto-eta
-gtk320noktoeta_file = \
-	$(gtk320noktoetadir)/gtk.css \
-	$(gtk320noktoetadir)/gtk.gresource
+gtk320midnightetadir   = $(srcdir)/gtk-3.20-midnight-eta
+gtk320midnighteta_file = \
+	$(gtk320midnightetadir)/gtk.css \
+	$(gtk320midnightetadir)/gtk.gresource
 
 gtk322dir   = $(srcdir)/gtk-3.22
 gtk322_file = \
@@ -72,15 +72,15 @@ gtk322brilaeta_file = \
 	$(gtk322brilaetadir)/gtk-dark.css \
 	$(gtk322brilaetadir)/gtk.gresource
 
-gtk322noktodir   = $(srcdir)/gtk-3.22-nokto
-gtk322nokto_file = \
-	$(gtk322noktodir)/gtk.css \
-	$(gtk322noktodir)/gtk.gresource
+gtk322midnightdir   = $(srcdir)/gtk-3.22-midnight
+gtk322midnight_file = \
+	$(gtk322midnightdir)/gtk.css \
+	$(gtk322midnightdir)/gtk.gresource
 
-gtk322noktoetadir   = $(srcdir)/gtk-3.22-nokto-eta
-gtk322noktoeta_file = \
-	$(gtk322noktoetadir)/gtk.css \
-	$(gtk322noktoetadir)/gtk.gresource
+gtk322midnightetadir   = $(srcdir)/gtk-3.22-midnight-eta
+gtk322midnighteta_file = \
+	$(gtk322midnightetadir)/gtk.css \
+	$(gtk322midnightetadir)/gtk.gresource
 
 gtk324dir   = $(srcdir)/gtk-3.24
 gtk324_file = \
@@ -106,15 +106,15 @@ gtk324brilaeta_file = \
 	$(gtk324brilaetadir)/gtk-dark.css \
 	$(gtk324brilaetadir)/gtk.gresource
 
-gtk324noktodir   = $(srcdir)/gtk-3.24-nokto
-gtk324nokto_file = \
-	$(gtk324noktodir)/gtk.css \
-	$(gtk324noktodir)/gtk.gresource
+gtk324midnightdir   = $(srcdir)/gtk-3.24-midnight
+gtk324midnight_file = \
+	$(gtk324midnightdir)/gtk.css \
+	$(gtk324midnightdir)/gtk.gresource
 
-gtk324noktoetadir   = $(srcdir)/gtk-3.24-nokto-eta
-gtk324noktoeta_file = \
-	$(gtk324noktoetadir)/gtk.css \
-	$(gtk324noktoetadir)/gtk.gresource
+gtk324midnightetadir   = $(srcdir)/gtk-3.24-midnight-eta
+gtk324midnighteta_file = \
+	$(gtk324midnightetadir)/gtk.css \
+	$(gtk324midnightetadir)/gtk.gresource
 
 gtk2dir   = $(srcdir)/gtk-2.0
 gtk2_file = \
@@ -324,17 +324,17 @@ gtk2_brila_eta_file = \
 gtk2_brila_eta_gtkrc_file = \
 	$(gtk2dir)/gtkrc-light-eta
 
-gtk2_nokto_file = \
+gtk2_midnight_file = \
 	$(gtk2dir)/3rd-party-dark.rc \
 	$(gtk2dir)/common-dark.rc
-gtk2_nokto_eta_file = \
+gtk2_midnight_eta_file = \
 	$(gtk2dir)/3rd-party-dark-eta.rc \
 	$(gtk2dir)/common-dark-eta.rc
-gtk2_nokto_gtkrc_file = \
+gtk2_midnight_gtkrc_file = \
 	$(gtk2dir)/gtkrc-dark
-gtk2_nokto_eta_gtkrc_file = \
+gtk2_midnight_eta_gtkrc_file = \
 	$(gtk2dir)/gtkrc-dark-eta
-gtk2_nokto_arrow_file = \
+gtk2_midnight_arrow_file = \
 	$(gtk2_assetdir)/Arrows/down-alt-dark.png \
 	$(gtk2_assetdir)/Arrows/down-alt-hover-dark.png \
 	$(gtk2_assetdir)/Arrows/down-alt-insensitive-dark.png \
@@ -355,7 +355,7 @@ gtk2_nokto_arrow_file = \
 	$(gtk2_assetdir)/Arrows/up-alt-insensitive-dark.png \
 	$(gtk2_assetdir)/Arrows/up-dark.png \
 	$(gtk2_assetdir)/Arrows/up-insensitive-dark.png
-gtk2_nokto_button_file = \
+gtk2_midnight_button_file = \
 	$(gtk2_assetdir)/Buttons/accent-flat-button-active.png \
 	$(gtk2_assetdir)/Buttons/accent-flat-button-hover.png \
 	$(gtk2_assetdir)/Buttons/buttonbox-flat-button-active-dark.png \
@@ -378,7 +378,7 @@ gtk2_nokto_button_file = \
 	$(gtk2_assetdir)/Buttons/rtl-button-dark.png \
 	$(gtk2_assetdir)/Buttons/rtl-button-hover-dark.png \
 	$(gtk2_assetdir)/Buttons/rtl-button-insensitive-dark.png
-gtk2_nokto_checkradio_file = \
+gtk2_midnight_checkradio_file = \
 	$(gtk2_assetdir)/Check-Radio/check-mixed-active-dark.png \
 	$(gtk2_assetdir)/Check-Radio/check-mixed-dark.png \
 	$(gtk2_assetdir)/Check-Radio/check-mixed-hover-dark.png \
@@ -421,12 +421,12 @@ gtk2_nokto_checkradio_file = \
 	$(gtk2_assetdir)/Check-Radio/radio-on-hover-menuitem.png \
 	$(gtk2_assetdir)/Check-Radio/radio-on-insensitive-menuitem.png \
 	$(gtk2_assetdir)/Check-Radio/radio-on-menuitem.png
-gtk2_nokto_column_file = \
+gtk2_midnight_column_file = \
 	$(gtk2_assetdir)/Column/column-active-dark.png \
 	$(gtk2_assetdir)/Column/column-dark.png \
 	$(gtk2_assetdir)/Column/column-hover-dark.png \
 	$(gtk2_assetdir)/Column/column-insensitive-dark.png
-gtk2_nokto_entry_file = \
+gtk2_midnight_entry_file = \
 	$(gtk2_assetdir)/Entry/bg-dark.png \
 	$(gtk2_assetdir)/Entry/bg-active-dark.png \
 	$(gtk2_assetdir)/Entry/bg-insensitive-dark.png \
@@ -439,7 +439,7 @@ gtk2_nokto_entry_file = \
 	$(gtk2_assetdir)/Entry/rtl-entry-active-dark.png \
 	$(gtk2_assetdir)/Entry/rtl-entry-dark.png \
 	$(gtk2_assetdir)/Entry/rtl-entry-insensitive-dark.png
-gtk2_nokto_handle_file = \
+gtk2_midnight_handle_file = \
 	$(gtk2_assetdir)/Handles/h-handle-active-dark.png \
 	$(gtk2_assetdir)/Handles/h-handle-dark.png \
 	$(gtk2_assetdir)/Handles/h-handle-hover-dark.png \
@@ -448,11 +448,11 @@ gtk2_nokto_handle_file = \
 	$(gtk2_assetdir)/Handles/v-handle-dark.png \
 	$(gtk2_assetdir)/Handles/v-handle-hover-dark.png \
 	$(gtk2_assetdir)/Handles/v-handle-insensitive-dark.png
-gtk2_nokto_line_file = \
+gtk2_midnight_line_file = \
 	$(gtk2_assetdir)/Lines/h-line.png \
 	$(gtk2_assetdir)/Lines/menu-line-dark.png \
 	$(gtk2_assetdir)/Lines/v-line.png
-gtk2_nokto_other_file = \
+gtk2_midnight_other_file = \
 	$(gtk2_assetdir)/Others/bottom.png \
 	$(gtk2_assetdir)/Others/focus-dark.png \
 	$(gtk2_assetdir)/Others/left.png \
@@ -462,10 +462,10 @@ gtk2_nokto_other_file = \
 	$(gtk2_assetdir)/Others/panel-active-dark.png \
 	$(gtk2_assetdir)/Others/panel-hover-dark.png \
 	$(gtk2_assetdir)/Others/top.png
-gtk2_nokto_progress_file = \
+gtk2_midnight_progress_file = \
 	$(gtk2_assetdir)/ProgressBar/bar.png \
 	$(gtk2_assetdir)/ProgressBar/trough-dark.png
-gtk2_nokto_range_file = \
+gtk2_midnight_range_file = \
 	$(gtk2_assetdir)/Range/h-scale-trough-active.png \
 	$(gtk2_assetdir)/Range/h-scale-trough-dark.png \
 	$(gtk2_assetdir)/Range/h-scale-trough-insensitive-dark.png \
@@ -476,7 +476,7 @@ gtk2_nokto_range_file = \
 	$(gtk2_assetdir)/Range/v-scale-trough-active.png \
 	$(gtk2_assetdir)/Range/v-scale-trough-dark.png \
 	$(gtk2_assetdir)/Range/v-scale-trough-insensitive-dark.png
-gtk2_nokto_scrollbar_file = \
+gtk2_midnight_scrollbar_file = \
 	$(gtk2_assetdir)/Scrollbars/h-slider-active-dark.png \
 	$(gtk2_assetdir)/Scrollbars/h-slider-dark.png \
 	$(gtk2_assetdir)/Scrollbars/h-slider-hover-dark.png \
@@ -487,13 +487,13 @@ gtk2_nokto_scrollbar_file = \
 	$(gtk2_assetdir)/Scrollbars/v-slider-hover-dark.png \
 	$(gtk2_assetdir)/Scrollbars/v-slider-insensitive-dark.png \
 	$(gtk2_assetdir)/Scrollbars/v-trough-dark.png
-gtk2_nokto_shadow_file = \
+gtk2_midnight_shadow_file = \
 	$(gtk2_assetdir)/Shadows/frame.png \
 	$(gtk2_assetdir)/Shadows/frame-notebook-dark.png \
 	$(gtk2_assetdir)/Shadows/gap.png \
 	$(gtk2_assetdir)/Shadows/z-depth-1.svg \
 	$(gtk2_assetdir)/Shadows/z-depth-2.svg
-gtk2_nokto_spin_file = \
+gtk2_midnight_spin_file = \
 	$(gtk2_assetdir)/Spin/ltr-down-active-dark.png \
 	$(gtk2_assetdir)/Spin/ltr-down-dark.png \
 	$(gtk2_assetdir)/Spin/ltr-down-hover-dark.png \
@@ -510,7 +510,7 @@ gtk2_nokto_spin_file = \
 	$(gtk2_assetdir)/Spin/rtl-up-dark.png \
 	$(gtk2_assetdir)/Spin/rtl-up-hover-dark.png \
 	$(gtk2_assetdir)/Spin/rtl-up-insensitive-dark.png
-gtk2_nokto_toolbar_file = \
+gtk2_midnight_toolbar_file = \
 	$(gtk2_assetdir)/Toolbar/inline-toolbar-dark.png
 
 gtknextdir   = $(srcdir)/gtk-4.0
@@ -537,32 +537,32 @@ gtknextbrilaeta_file = \
 	$(gtknextbrilaetadir)/gtk-dark.css \
 	$(gtknextbrilaetadir)/gtk.gresource
 
-gtknextnoktodir   = $(srcdir)/gtk-4.0-nokto
-gtknextnokto_file = \
-	$(gtknextnoktodir)/gtk.css \
-	$(gtknextnoktodir)/gtk.gresource
+gtknextmidnightdir   = $(srcdir)/gtk-4.0-midnight
+gtknextmidnight_file = \
+	$(gtknextmidnightdir)/gtk.css \
+	$(gtknextmidnightdir)/gtk.gresource
 
-gtknextnoktoetadir   = $(srcdir)/gtk-4.0-nokto-eta
-gtknextnoktoeta_file = \
-	$(gtknextnoktoetadir)/gtk.css \
-	$(gtknextnoktoetadir)/gtk.gresource
+gtknextmidnightetadir   = $(srcdir)/gtk-4.0-midnight-eta
+gtknextmidnighteta_file = \
+	$(gtknextmidnightetadir)/gtk.css \
+	$(gtknextmidnightetadir)/gtk.gresource
 
 xfcenotifydir      = $(srcdir)/xfce-notify-4.0
 xfcenotifybriladir = $(srcdir)/xfce-notify-4.0-brila
-xfcenotifynoktodir = $(srcdir)/xfce-notify-4.0-nokto
+xfcenotifymidnightdir = $(srcdir)/xfce-notify-4.0-midnight
 xfcenotify_file = \
 	$(xfcenotifydir)/gtk.css
 xfcenotifybrila_file = \
 	$(xfcenotifybriladir)/gtk.css
-xfcenotifynokto_file = \
-	$(xfcenotifynoktodir)/gtk.css
+xfcenotifymidnight_file = \
+	$(xfcenotifymidnightdir)/gtk.css
 
 index_file          = $(srcdir)/index.theme
 index_eta_file      = $(srcdir)/index.theme-eta
 index_brila_file    = $(srcdir)/index.theme-brila
 index_brilaeta_file = $(srcdir)/index.theme-brila-eta
-index_nokto_file    = $(srcdir)/index.theme-nokto
-index_noktoeta_file = $(srcdir)/index.theme-nokto-eta
+index_midnight_file    = $(srcdir)/index.theme-midnight
+index_midnighteta_file = $(srcdir)/index.theme-midnight-eta
 
 sassc_option = -M -t compact
 parallel_option = --null --no-notice --line-buffer --jobs 100%
@@ -579,20 +579,20 @@ all:
 	$(MKDIR_P) $(srcdir)/gtk-3.20-eta && \
 	$(MKDIR_P) $(srcdir)/gtk-3.20-brila && \
 	$(MKDIR_P) $(srcdir)/gtk-3.20-brila-eta && \
-	$(MKDIR_P) $(srcdir)/gtk-3.20-nokto && \
-	$(MKDIR_P) $(srcdir)/gtk-3.20-nokto-eta && \
+	$(MKDIR_P) $(srcdir)/gtk-3.20-midnight && \
+	$(MKDIR_P) $(srcdir)/gtk-3.20-midnight-eta && \
 	$(MKDIR_P) $(srcdir)/gtk-3.22 && \
 	$(MKDIR_P) $(srcdir)/gtk-3.22-eta && \
 	$(MKDIR_P) $(srcdir)/gtk-3.22-brila && \
 	$(MKDIR_P) $(srcdir)/gtk-3.22-brila-eta && \
-	$(MKDIR_P) $(srcdir)/gtk-3.22-nokto && \
-	$(MKDIR_P) $(srcdir)/gtk-3.22-nokto-eta && \
+	$(MKDIR_P) $(srcdir)/gtk-3.22-midnight && \
+	$(MKDIR_P) $(srcdir)/gtk-3.22-midnight-eta && \
 	$(MKDIR_P) $(srcdir)/gtk-3.24 && \
 	$(MKDIR_P) $(srcdir)/gtk-3.24-eta && \
 	$(MKDIR_P) $(srcdir)/gtk-3.24-brila && \
 	$(MKDIR_P) $(srcdir)/gtk-3.24-brila-eta && \
-	$(MKDIR_P) $(srcdir)/gtk-3.24-nokto && \
-	$(MKDIR_P) $(srcdir)/gtk-3.24-nokto-eta && \
+	$(MKDIR_P) $(srcdir)/gtk-3.24-midnight && \
+	$(MKDIR_P) $(srcdir)/gtk-3.24-midnight-eta && \
 	$(MKDIR_P) $(srcdir)/asset/assets-gtk2 && \
 	$(MKDIR_P) $(srcdir)/asset/assets-gtk2/Arrows && \
 	$(MKDIR_P) $(srcdir)/asset/assets-gtk2/Buttons && \
@@ -616,93 +616,93 @@ if ENABLE_PARALLEL
 	cd $(srcdir)/sass && $(PARALLEL) $(parallel_option) ::: \
 		"$(SASSC) $(sassc_option) 3.20/gtk-mixed.scss ../gtk-3.20/gtk-contained.css" \
 		"$(SASSC) $(sassc_option) 3.20/gtk-light.scss ../gtk-3.20-brila/gtk-contained.css" \
-		"$(SASSC) $(sassc_option) 3.20/gtk-dark.scss ../gtk-3.20-nokto/gtk-contained-dark.css" \
+		"$(SASSC) $(sassc_option) 3.20/gtk-dark.scss ../gtk-3.20-midnight/gtk-contained-dark.css" \
 		"$(SASSC) $(sassc_option) 3.20/gtk-mixed-eta.scss ../gtk-3.20-eta/gtk-contained.css" \
 		"$(SASSC) $(sassc_option) 3.20/gtk-light-eta.scss ../gtk-3.20-brila-eta/gtk-contained.css" \
-		"$(SASSC) $(sassc_option) 3.20/gtk-dark-eta.scss ../gtk-3.20-nokto-eta/gtk-contained-dark.css" \
+		"$(SASSC) $(sassc_option) 3.20/gtk-dark-eta.scss ../gtk-3.20-midnight-eta/gtk-contained-dark.css" \
 		"$(SASSC) $(sassc_option) 3.22/gtk-mixed.scss ../gtk-3.22/gtk-contained.css" \
 		"$(SASSC) $(sassc_option) 3.22/gtk-light.scss ../gtk-3.22-brila/gtk-contained.css" \
-		"$(SASSC) $(sassc_option) 3.22/gtk-dark.scss ../gtk-3.22-nokto/gtk-contained-dark.css" \
+		"$(SASSC) $(sassc_option) 3.22/gtk-dark.scss ../gtk-3.22-midnight/gtk-contained-dark.css" \
 		"$(SASSC) $(sassc_option) 3.22/gtk-mixed-eta.scss ../gtk-3.22-eta/gtk-contained.css" \
 		"$(SASSC) $(sassc_option) 3.22/gtk-light-eta.scss ../gtk-3.22-brila-eta/gtk-contained.css" \
-		"$(SASSC) $(sassc_option) 3.22/gtk-dark-eta.scss ../gtk-3.22-nokto-eta/gtk-contained-dark.css" \
+		"$(SASSC) $(sassc_option) 3.22/gtk-dark-eta.scss ../gtk-3.22-midnight-eta/gtk-contained-dark.css" \
 		"$(SASSC) $(sassc_option) 3.24/gtk-mixed.scss ../gtk-3.24/gtk-contained.css" \
 		"$(SASSC) $(sassc_option) 3.24/gtk-light.scss ../gtk-3.24-brila/gtk-contained.css" \
-		"$(SASSC) $(sassc_option) 3.24/gtk-dark.scss ../gtk-3.24-nokto/gtk-contained-dark.css" \
+		"$(SASSC) $(sassc_option) 3.24/gtk-dark.scss ../gtk-3.24-midnight/gtk-contained-dark.css" \
 		"$(SASSC) $(sassc_option) 3.24/gtk-mixed-eta.scss ../gtk-3.24-eta/gtk-contained.css" \
 		"$(SASSC) $(sassc_option) 3.24/gtk-light-eta.scss ../gtk-3.24-brila-eta/gtk-contained.css" \
-		"$(SASSC) $(sassc_option) 3.24/gtk-dark-eta.scss ../gtk-3.24-nokto-eta/gtk-contained-dark.css"
+		"$(SASSC) $(sassc_option) 3.24/gtk-dark-eta.scss ../gtk-3.24-midnight-eta/gtk-contained-dark.css"
 else
 	cd $(srcdir)/sass && \
 		$(SASSC) $(sassc_option) 3.20/gtk-mixed.scss ../gtk-3.20/gtk-contained.css && \
 		$(SASSC) $(sassc_option) 3.20/gtk-light.scss ../gtk-3.20-brila/gtk-contained.css && \
-		$(SASSC) $(sassc_option) 3.20/gtk-dark.scss ../gtk-3.20-nokto/gtk-contained-dark.css && \
+		$(SASSC) $(sassc_option) 3.20/gtk-dark.scss ../gtk-3.20-midnight/gtk-contained-dark.css && \
 		$(SASSC) $(sassc_option) 3.20/gtk-mixed-eta.scss ../gtk-3.20-eta/gtk-contained.css && \
 		$(SASSC) $(sassc_option) 3.20/gtk-light-eta.scss ../gtk-3.20-brila-eta/gtk-contained.css && \
-		$(SASSC) $(sassc_option) 3.20/gtk-dark-eta.scss ../gtk-3.20-nokto-eta/gtk-contained-dark.css && \
+		$(SASSC) $(sassc_option) 3.20/gtk-dark-eta.scss ../gtk-3.20-midnight-eta/gtk-contained-dark.css && \
 		$(SASSC) $(sassc_option) 3.22/gtk-mixed.scss ../gtk-3.22/gtk-contained.css && \
 		$(SASSC) $(sassc_option) 3.22/gtk-light.scss ../gtk-3.22-brila/gtk-contained.css && \
-		$(SASSC) $(sassc_option) 3.22/gtk-dark.scss ../gtk-3.22-nokto/gtk-contained-dark.css && \
+		$(SASSC) $(sassc_option) 3.22/gtk-dark.scss ../gtk-3.22-midnight/gtk-contained-dark.css && \
 		$(SASSC) $(sassc_option) 3.22/gtk-mixed-eta.scss ../gtk-3.22-eta/gtk-contained.css && \
 		$(SASSC) $(sassc_option) 3.22/gtk-light-eta.scss ../gtk-3.22-brila-eta/gtk-contained.css && \
-		$(SASSC) $(sassc_option) 3.22/gtk-dark-eta.scss ../gtk-3.22-nokto-eta/gtk-contained-dark.css && \
+		$(SASSC) $(sassc_option) 3.22/gtk-dark-eta.scss ../gtk-3.22-midnight-eta/gtk-contained-dark.css && \
 		$(SASSC) $(sassc_option) 3.24/gtk-mixed.scss ../gtk-3.24/gtk-contained.css && \
 		$(SASSC) $(sassc_option) 3.24/gtk-light.scss ../gtk-3.24-brila/gtk-contained.css && \
-		$(SASSC) $(sassc_option) 3.24/gtk-dark.scss ../gtk-3.24-nokto/gtk-contained-dark.css && \
+		$(SASSC) $(sassc_option) 3.24/gtk-dark.scss ../gtk-3.24-midnight/gtk-contained-dark.css && \
 		$(SASSC) $(sassc_option) 3.24/gtk-mixed-eta.scss ../gtk-3.24-eta/gtk-contained.css && \
 		$(SASSC) $(sassc_option) 3.24/gtk-light-eta.scss ../gtk-3.24-brila-eta/gtk-contained.css && \
-		$(SASSC) $(sassc_option) 3.24/gtk-dark-eta.scss ../gtk-3.24-nokto-eta/gtk-contained-dark.css
+		$(SASSC) $(sassc_option) 3.24/gtk-dark-eta.scss ../gtk-3.24-midnight-eta/gtk-contained-dark.css
 endif
-	cp -Rv $(srcdir)/gtk-3.20-nokto/gtk-contained-dark.css $(srcdir)/gtk-3.20/gtk-contained-dark.css
-	cp -Rv $(srcdir)/gtk-3.20-nokto/gtk-contained-dark.css $(srcdir)/gtk-3.20-brila/gtk-contained-dark.css
-	cp -Rv $(srcdir)/gtk-3.20-nokto-eta/gtk-contained-dark.css $(srcdir)/gtk-3.20-eta/gtk-contained-dark.css
-	cp -Rv $(srcdir)/gtk-3.20-nokto-eta/gtk-contained-dark.css $(srcdir)/gtk-3.20-brila-eta/gtk-contained-dark.css
-	cp -Rv $(srcdir)/gtk-3.22-nokto/gtk-contained-dark.css $(srcdir)/gtk-3.22/gtk-contained-dark.css
-	cp -Rv $(srcdir)/gtk-3.22-nokto/gtk-contained-dark.css $(srcdir)/gtk-3.22-brila/gtk-contained-dark.css
-	cp -Rv $(srcdir)/gtk-3.22-nokto-eta/gtk-contained-dark.css $(srcdir)/gtk-3.22-eta/gtk-contained-dark.css
-	cp -Rv $(srcdir)/gtk-3.22-nokto-eta/gtk-contained-dark.css $(srcdir)/gtk-3.22-brila-eta/gtk-contained-dark.css
-	cp -Rv $(srcdir)/gtk-3.24-nokto/gtk-contained-dark.css $(srcdir)/gtk-3.24/gtk-contained-dark.css
-	cp -Rv $(srcdir)/gtk-3.24-nokto/gtk-contained-dark.css $(srcdir)/gtk-3.24-brila/gtk-contained-dark.css
-	cp -Rv $(srcdir)/gtk-3.24-nokto-eta/gtk-contained-dark.css $(srcdir)/gtk-3.24-eta/gtk-contained-dark.css
-	cp -Rv $(srcdir)/gtk-3.24-nokto-eta/gtk-contained-dark.css $(srcdir)/gtk-3.24-brila-eta/gtk-contained-dark.css
+	cp -Rv $(srcdir)/gtk-3.20-midnight/gtk-contained-dark.css $(srcdir)/gtk-3.20/gtk-contained-dark.css
+	cp -Rv $(srcdir)/gtk-3.20-midnight/gtk-contained-dark.css $(srcdir)/gtk-3.20-brila/gtk-contained-dark.css
+	cp -Rv $(srcdir)/gtk-3.20-midnight-eta/gtk-contained-dark.css $(srcdir)/gtk-3.20-eta/gtk-contained-dark.css
+	cp -Rv $(srcdir)/gtk-3.20-midnight-eta/gtk-contained-dark.css $(srcdir)/gtk-3.20-brila-eta/gtk-contained-dark.css
+	cp -Rv $(srcdir)/gtk-3.22-midnight/gtk-contained-dark.css $(srcdir)/gtk-3.22/gtk-contained-dark.css
+	cp -Rv $(srcdir)/gtk-3.22-midnight/gtk-contained-dark.css $(srcdir)/gtk-3.22-brila/gtk-contained-dark.css
+	cp -Rv $(srcdir)/gtk-3.22-midnight-eta/gtk-contained-dark.css $(srcdir)/gtk-3.22-eta/gtk-contained-dark.css
+	cp -Rv $(srcdir)/gtk-3.22-midnight-eta/gtk-contained-dark.css $(srcdir)/gtk-3.22-brila-eta/gtk-contained-dark.css
+	cp -Rv $(srcdir)/gtk-3.24-midnight/gtk-contained-dark.css $(srcdir)/gtk-3.24/gtk-contained-dark.css
+	cp -Rv $(srcdir)/gtk-3.24-midnight/gtk-contained-dark.css $(srcdir)/gtk-3.24-brila/gtk-contained-dark.css
+	cp -Rv $(srcdir)/gtk-3.24-midnight-eta/gtk-contained-dark.css $(srcdir)/gtk-3.24-eta/gtk-contained-dark.css
+	cp -Rv $(srcdir)/gtk-3.24-midnight-eta/gtk-contained-dark.css $(srcdir)/gtk-3.24-brila-eta/gtk-contained-dark.css
 
 if ENABLE_GTK_NEXT
 	$(MKDIR_P) $(srcdir)/gtk-4.0
 	$(MKDIR_P) $(srcdir)/gtk-4.0-eta
 	$(MKDIR_P) $(srcdir)/gtk-4.0-brila
 	$(MKDIR_P) $(srcdir)/gtk-4.0-brila-eta
-	$(MKDIR_P) $(srcdir)/gtk-4.0-nokto
-	$(MKDIR_P) $(srcdir)/gtk-4.0-nokto-eta
+	$(MKDIR_P) $(srcdir)/gtk-4.0-midnight
+	$(MKDIR_P) $(srcdir)/gtk-4.0-midnight-eta
 if ENABLE_PARALLEL
 	cd $(srcdir)/sass && $(PARALLEL) $(parallel_option) ::: \
 		"$(SASSC) $(sassc_option) 4.0/gtk-mixed.scss ../gtk-4.0/gtk-contained.css" \
 		"$(SASSC) $(sassc_option) 4.0/gtk-light.scss ../gtk-4.0-brila/gtk-contained.css" \
-		"$(SASSC) $(sassc_option) 4.0/gtk-dark.scss ../gtk-4.0-nokto/gtk-contained-dark.css" \
+		"$(SASSC) $(sassc_option) 4.0/gtk-dark.scss ../gtk-4.0-midnight/gtk-contained-dark.css" \
 		"$(SASSC) $(sassc_option) 4.0/gtk-mixed-eta.scss ../gtk-4.0-eta/gtk-contained.css" \
 		"$(SASSC) $(sassc_option) 4.0/gtk-light-eta.scss ../gtk-4.0-brila-eta/gtk-contained.css" \
-		"$(SASSC) $(sassc_option) 4.0/gtk-dark-eta.scss ../gtk-4.0-nokto-eta/gtk-contained-dark.css"
+		"$(SASSC) $(sassc_option) 4.0/gtk-dark-eta.scss ../gtk-4.0-midnight-eta/gtk-contained-dark.css"
 else
 	cd $(srcdir)/sass && \
 		$(SASSC) $(sassc_option) 4.0/gtk-mixed.scss ../gtk-4.0/gtk-contained.css && \
 		$(SASSC) $(sassc_option) 4.0/gtk-light.scss ../gtk-4.0-brila/gtk-contained.css && \
-		$(SASSC) $(sassc_option) 4.0/gtk-dark.scss ../gtk-4.0-nokto/gtk-contained-dark.css && \
+		$(SASSC) $(sassc_option) 4.0/gtk-dark.scss ../gtk-4.0-midnight/gtk-contained-dark.css && \
 		$(SASSC) $(sassc_option) 4.0/gtk-mixed-eta.scss ../gtk-4.0-eta/gtk-contained.css && \
 		$(SASSC) $(sassc_option) 4.0/gtk-light-eta.scss ../gtk-4.0-brila-eta/gtk-contained.css && \
-		$(SASSC) $(sassc_option) 4.0/gtk-dark-eta.scss ../gtk-4.0-nokto-eta/gtk-contained-dark.css
+		$(SASSC) $(sassc_option) 4.0/gtk-dark-eta.scss ../gtk-4.0-midnight-eta/gtk-contained-dark.css
 endif
-	cp -Rv $(srcdir)/gtk-4.0-nokto/gtk-contained-dark.css $(srcdir)/gtk-4.0/gtk-contained-dark.css
-	cp -Rv $(srcdir)/gtk-4.0-nokto/gtk-contained-dark.css $(srcdir)/gtk-4.0-brila/gtk-contained-dark.css
-	cp -Rv $(srcdir)/gtk-4.0-nokto-eta/gtk-contained-dark.css $(srcdir)/gtk-4.0-eta/gtk-contained-dark.css
-	cp -Rv $(srcdir)/gtk-4.0-nokto-eta/gtk-contained-dark.css $(srcdir)/gtk-4.0-brila-eta/gtk-contained-dark.css
+	cp -Rv $(srcdir)/gtk-4.0-midnight/gtk-contained-dark.css $(srcdir)/gtk-4.0/gtk-contained-dark.css
+	cp -Rv $(srcdir)/gtk-4.0-midnight/gtk-contained-dark.css $(srcdir)/gtk-4.0-brila/gtk-contained-dark.css
+	cp -Rv $(srcdir)/gtk-4.0-midnight-eta/gtk-contained-dark.css $(srcdir)/gtk-4.0-eta/gtk-contained-dark.css
+	cp -Rv $(srcdir)/gtk-4.0-midnight-eta/gtk-contained-dark.css $(srcdir)/gtk-4.0-brila-eta/gtk-contained-dark.css
 endif
 
 if ENABLE_XFCE
 	$(MKDIR_P) $(srcdir)/xfce-notify-4.0
 	$(MKDIR_P) $(srcdir)/xfce-notify-4.0-brila
-	$(MKDIR_P) $(srcdir)/xfce-notify-4.0-nokto
+	$(MKDIR_P) $(srcdir)/xfce-notify-4.0-midnight
 	cd $(srcdir)/sass && $(SASSC) $(sassc_option) xfce-notify/xfce-notify-4.0-mixed.scss ../xfce-notify-4.0/gtk.css
 	cd $(srcdir)/sass && $(SASSC) $(sassc_option) xfce-notify/xfce-notify-4.0-light.scss ../xfce-notify-4.0-brila/gtk.css
-	cd $(srcdir)/sass && $(SASSC) $(sassc_option) xfce-notify/xfce-notify-4.0-dark.scss ../xfce-notify-4.0-nokto/gtk.css
+	cd $(srcdir)/sass && $(SASSC) $(sassc_option) xfce-notify/xfce-notify-4.0-dark.scss ../xfce-notify-4.0-midnight/gtk.css
 endif
 
 if ENABLE_PARALLEL
@@ -756,17 +756,17 @@ endif
 install-data-local:
 	$(MKDIR_P) $(adaptadir)
 	$(MKDIR_P) $(briladir)
-	$(MKDIR_P) $(noktodir)
+	$(MKDIR_P) $(midnightdir)
 	$(MKDIR_P) $(adaptaetadir)
 	$(MKDIR_P) $(brilaetadir)
-	$(MKDIR_P) $(noktoetadir)
+	$(MKDIR_P) $(midnightetadir)
 
 	cp -Rv $(index_file) $(adaptadir)
 	cp -Rv $(index_brila_file) $(briladir)/index.theme
-	cp -Rv $(index_nokto_file) $(noktodir)/index.theme
+	cp -Rv $(index_midnight_file) $(midnightdir)/index.theme
 	cp -Rv $(index_eta_file) $(adaptaetadir)/index.theme
 	cp -Rv $(index_brilaeta_file) $(brilaetadir)/index.theme
-	cp -Rv $(index_noktoeta_file) $(noktoetadir)/index.theme
+	cp -Rv $(index_midnighteta_file) $(midnightetadir)/index.theme
 
 	$(MKDIR_P) $(adaptadir)/gtk-3.0
 	cp -Rv $(gtk320_file) $(adaptadir)/gtk-3.0
@@ -780,12 +780,12 @@ install-data-local:
 	$(MKDIR_P) $(brilaetadir)/gtk-3.0
 	cp -Rv $(gtk320brilaeta_file) $(brilaetadir)/gtk-3.0
 	cp -Rv $(gtk3_thumb_file) $(brilaetadir)/gtk-3.0
-	$(MKDIR_P) $(noktodir)/gtk-3.0
-	cp -Rv $(gtk320nokto_file) $(noktodir)/gtk-3.0
-	cp -Rv $(gtk3_darkthumb_file) $(noktodir)/gtk-3.0/thumbnail.png
-	$(MKDIR_P) $(noktoetadir)/gtk-3.0
-	cp -Rv $(gtk320noktoeta_file) $(noktoetadir)/gtk-3.0
-	cp -Rv $(gtk3_darkthumb_file) $(noktoetadir)/gtk-3.0/thumbnail.png
+	$(MKDIR_P) $(midnightdir)/gtk-3.0
+	cp -Rv $(gtk320midnight_file) $(midnightdir)/gtk-3.0
+	cp -Rv $(gtk3_darkthumb_file) $(midnightdir)/gtk-3.0/thumbnail.png
+	$(MKDIR_P) $(midnightetadir)/gtk-3.0
+	cp -Rv $(gtk320midnighteta_file) $(midnightetadir)/gtk-3.0
+	cp -Rv $(gtk3_darkthumb_file) $(midnightetadir)/gtk-3.0/thumbnail.png
 
 	$(MKDIR_P) $(adaptadir)/gtk-3.22
 	cp -Rv $(gtk322_file) $(adaptadir)/gtk-3.22
@@ -795,10 +795,10 @@ install-data-local:
 	cp -Rv $(gtk322brila_file) $(briladir)/gtk-3.22
 	$(MKDIR_P) $(brilaetadir)/gtk-3.22
 	cp -Rv $(gtk322brilaeta_file) $(brilaetadir)/gtk-3.22
-	$(MKDIR_P) $(noktodir)/gtk-3.22
-	cp -Rv $(gtk322nokto_file) $(noktodir)/gtk-3.22
-	$(MKDIR_P) $(noktoetadir)/gtk-3.22
-	cp -Rv $(gtk322noktoeta_file) $(noktoetadir)/gtk-3.22
+	$(MKDIR_P) $(midnightdir)/gtk-3.22
+	cp -Rv $(gtk322midnight_file) $(midnightdir)/gtk-3.22
+	$(MKDIR_P) $(midnightetadir)/gtk-3.22
+	cp -Rv $(gtk322midnighteta_file) $(midnightetadir)/gtk-3.22
 
 	$(MKDIR_P) $(adaptadir)/gtk-3.24
 	cp -Rv $(gtk324_file) $(adaptadir)/gtk-3.24
@@ -808,10 +808,10 @@ install-data-local:
 	cp -Rv $(gtk324brila_file) $(briladir)/gtk-3.24
 	$(MKDIR_P) $(brilaetadir)/gtk-3.24
 	cp -Rv $(gtk324brilaeta_file) $(brilaetadir)/gtk-3.24
-	$(MKDIR_P) $(noktodir)/gtk-3.24
-	cp -Rv $(gtk324nokto_file) $(noktodir)/gtk-3.24
-	$(MKDIR_P) $(noktoetadir)/gtk-3.24
-	cp -Rv $(gtk324noktoeta_file) $(noktoetadir)/gtk-3.24
+	$(MKDIR_P) $(midnightdir)/gtk-3.24
+	cp -Rv $(gtk324midnight_file) $(midnightdir)/gtk-3.24
+	$(MKDIR_P) $(midnightetadir)/gtk-3.24
+	cp -Rv $(gtk324midnighteta_file) $(midnightetadir)/gtk-3.24
 
 	$(MKDIR_P) $(adaptadir)/gtk-2.0
 	$(MKDIR_P) $(adaptadir)/gtk-2.0/Arrows
@@ -941,69 +941,69 @@ install-data-local:
 	cp -Rv $(gtk2_spin_file) $(brilaetadir)/gtk-2.0/Spin
 	cp -Rv $(gtk2_toolbar_file) $(brilaetadir)/gtk-2.0/Toolbar
 
-	$(MKDIR_P) $(noktodir)/gtk-2.0
-	$(MKDIR_P) $(noktodir)/gtk-2.0/Arrows
-	$(MKDIR_P) $(noktodir)/gtk-2.0/Buttons
-	$(MKDIR_P) $(noktodir)/gtk-2.0/Check-Radio
-	$(MKDIR_P) $(noktodir)/gtk-2.0/Column
-	$(MKDIR_P) $(noktodir)/gtk-2.0/Entry
-	$(MKDIR_P) $(noktodir)/gtk-2.0/Handles
-	$(MKDIR_P) $(noktodir)/gtk-2.0/Lines
-	$(MKDIR_P) $(noktodir)/gtk-2.0/Others
-	$(MKDIR_P) $(noktodir)/gtk-2.0/ProgressBar
-	$(MKDIR_P) $(noktodir)/gtk-2.0/Range
-	$(MKDIR_P) $(noktodir)/gtk-2.0/Scrollbars
-	$(MKDIR_P) $(noktodir)/gtk-2.0/Shadows
-	$(MKDIR_P) $(noktodir)/gtk-2.0/Spin
-	$(MKDIR_P) $(noktodir)/gtk-2.0/Toolbar
-	cp -Rv $(gtk2_nokto_file) $(noktodir)/gtk-2.0
-	cp -Rv $(gtk2_nokto_gtkrc_file) $(noktodir)/gtk-2.0/gtkrc
-	cp -Rv $(gtk2_nokto_arrow_file) $(noktodir)/gtk-2.0/Arrows
-	cp -Rv $(gtk2_nokto_button_file) $(noktodir)/gtk-2.0/Buttons
-	cp -Rv $(gtk2_nokto_checkradio_file) $(noktodir)/gtk-2.0/Check-Radio
-	cp -Rv $(gtk2_nokto_column_file) $(noktodir)/gtk-2.0/Column
-	cp -Rv $(gtk2_nokto_entry_file) $(noktodir)/gtk-2.0/Entry
-	cp -Rv $(gtk2_nokto_handle_file) $(noktodir)/gtk-2.0/Handles
-	cp -Rv $(gtk2_nokto_line_file) $(noktodir)/gtk-2.0/Lines
-	cp -Rv $(gtk2_nokto_other_file) $(noktodir)/gtk-2.0/Others
-	cp -Rv $(gtk2_nokto_progress_file) $(noktodir)/gtk-2.0/ProgressBar
-	cp -Rv $(gtk2_nokto_range_file) $(noktodir)/gtk-2.0/Range
-	cp -Rv $(gtk2_nokto_scrollbar_file) $(noktodir)/gtk-2.0/Scrollbars
-	cp -Rv $(gtk2_nokto_shadow_file) $(noktodir)/gtk-2.0/Shadows
-	cp -Rv $(gtk2_nokto_spin_file) $(noktodir)/gtk-2.0/Spin
-	cp -Rv $(gtk2_nokto_toolbar_file) $(noktodir)/gtk-2.0/Toolbar
+	$(MKDIR_P) $(midnightdir)/gtk-2.0
+	$(MKDIR_P) $(midnightdir)/gtk-2.0/Arrows
+	$(MKDIR_P) $(midnightdir)/gtk-2.0/Buttons
+	$(MKDIR_P) $(midnightdir)/gtk-2.0/Check-Radio
+	$(MKDIR_P) $(midnightdir)/gtk-2.0/Column
+	$(MKDIR_P) $(midnightdir)/gtk-2.0/Entry
+	$(MKDIR_P) $(midnightdir)/gtk-2.0/Handles
+	$(MKDIR_P) $(midnightdir)/gtk-2.0/Lines
+	$(MKDIR_P) $(midnightdir)/gtk-2.0/Others
+	$(MKDIR_P) $(midnightdir)/gtk-2.0/ProgressBar
+	$(MKDIR_P) $(midnightdir)/gtk-2.0/Range
+	$(MKDIR_P) $(midnightdir)/gtk-2.0/Scrollbars
+	$(MKDIR_P) $(midnightdir)/gtk-2.0/Shadows
+	$(MKDIR_P) $(midnightdir)/gtk-2.0/Spin
+	$(MKDIR_P) $(midnightdir)/gtk-2.0/Toolbar
+	cp -Rv $(gtk2_midnight_file) $(midnightdir)/gtk-2.0
+	cp -Rv $(gtk2_midnight_gtkrc_file) $(midnightdir)/gtk-2.0/gtkrc
+	cp -Rv $(gtk2_midnight_arrow_file) $(midnightdir)/gtk-2.0/Arrows
+	cp -Rv $(gtk2_midnight_button_file) $(midnightdir)/gtk-2.0/Buttons
+	cp -Rv $(gtk2_midnight_checkradio_file) $(midnightdir)/gtk-2.0/Check-Radio
+	cp -Rv $(gtk2_midnight_column_file) $(midnightdir)/gtk-2.0/Column
+	cp -Rv $(gtk2_midnight_entry_file) $(midnightdir)/gtk-2.0/Entry
+	cp -Rv $(gtk2_midnight_handle_file) $(midnightdir)/gtk-2.0/Handles
+	cp -Rv $(gtk2_midnight_line_file) $(midnightdir)/gtk-2.0/Lines
+	cp -Rv $(gtk2_midnight_other_file) $(midnightdir)/gtk-2.0/Others
+	cp -Rv $(gtk2_midnight_progress_file) $(midnightdir)/gtk-2.0/ProgressBar
+	cp -Rv $(gtk2_midnight_range_file) $(midnightdir)/gtk-2.0/Range
+	cp -Rv $(gtk2_midnight_scrollbar_file) $(midnightdir)/gtk-2.0/Scrollbars
+	cp -Rv $(gtk2_midnight_shadow_file) $(midnightdir)/gtk-2.0/Shadows
+	cp -Rv $(gtk2_midnight_spin_file) $(midnightdir)/gtk-2.0/Spin
+	cp -Rv $(gtk2_midnight_toolbar_file) $(midnightdir)/gtk-2.0/Toolbar
 
-	$(MKDIR_P) $(noktoetadir)/gtk-2.0
-	$(MKDIR_P) $(noktoetadir)/gtk-2.0/Arrows
-	$(MKDIR_P) $(noktoetadir)/gtk-2.0/Buttons
-	$(MKDIR_P) $(noktoetadir)/gtk-2.0/Check-Radio
-	$(MKDIR_P) $(noktoetadir)/gtk-2.0/Column
-	$(MKDIR_P) $(noktoetadir)/gtk-2.0/Entry
-	$(MKDIR_P) $(noktoetadir)/gtk-2.0/Handles
-	$(MKDIR_P) $(noktoetadir)/gtk-2.0/Lines
-	$(MKDIR_P) $(noktoetadir)/gtk-2.0/Others
-	$(MKDIR_P) $(noktoetadir)/gtk-2.0/ProgressBar
-	$(MKDIR_P) $(noktoetadir)/gtk-2.0/Range
-	$(MKDIR_P) $(noktoetadir)/gtk-2.0/Scrollbars
-	$(MKDIR_P) $(noktoetadir)/gtk-2.0/Shadows
-	$(MKDIR_P) $(noktoetadir)/gtk-2.0/Spin
-	$(MKDIR_P) $(noktoetadir)/gtk-2.0/Toolbar
-	cp -Rv $(gtk2_nokto_eta_file) $(noktoetadir)/gtk-2.0
-	cp -Rv $(gtk2_nokto_eta_gtkrc_file) $(noktoetadir)/gtk-2.0/gtkrc
-	cp -Rv $(gtk2_nokto_arrow_file) $(noktoetadir)/gtk-2.0/Arrows
-	cp -Rv $(gtk2_nokto_button_file) $(noktoetadir)/gtk-2.0/Buttons
-	cp -Rv $(gtk2_nokto_checkradio_file) $(noktoetadir)/gtk-2.0/Check-Radio
-	cp -Rv $(gtk2_nokto_column_file) $(noktoetadir)/gtk-2.0/Column
-	cp -Rv $(gtk2_nokto_entry_file) $(noktoetadir)/gtk-2.0/Entry
-	cp -Rv $(gtk2_nokto_handle_file) $(noktoetadir)/gtk-2.0/Handles
-	cp -Rv $(gtk2_nokto_line_file) $(noktoetadir)/gtk-2.0/Lines
-	cp -Rv $(gtk2_nokto_other_file) $(noktoetadir)/gtk-2.0/Others
-	cp -Rv $(gtk2_nokto_progress_file) $(noktoetadir)/gtk-2.0/ProgressBar
-	cp -Rv $(gtk2_nokto_range_file) $(noktoetadir)/gtk-2.0/Range
-	cp -Rv $(gtk2_nokto_scrollbar_file) $(noktoetadir)/gtk-2.0/Scrollbars
-	cp -Rv $(gtk2_nokto_shadow_file) $(noktoetadir)/gtk-2.0/Shadows
-	cp -Rv $(gtk2_nokto_spin_file) $(noktoetadir)/gtk-2.0/Spin
-	cp -Rv $(gtk2_nokto_toolbar_file) $(noktoetadir)/gtk-2.0/Toolbar
+	$(MKDIR_P) $(midnightetadir)/gtk-2.0
+	$(MKDIR_P) $(midnightetadir)/gtk-2.0/Arrows
+	$(MKDIR_P) $(midnightetadir)/gtk-2.0/Buttons
+	$(MKDIR_P) $(midnightetadir)/gtk-2.0/Check-Radio
+	$(MKDIR_P) $(midnightetadir)/gtk-2.0/Column
+	$(MKDIR_P) $(midnightetadir)/gtk-2.0/Entry
+	$(MKDIR_P) $(midnightetadir)/gtk-2.0/Handles
+	$(MKDIR_P) $(midnightetadir)/gtk-2.0/Lines
+	$(MKDIR_P) $(midnightetadir)/gtk-2.0/Others
+	$(MKDIR_P) $(midnightetadir)/gtk-2.0/ProgressBar
+	$(MKDIR_P) $(midnightetadir)/gtk-2.0/Range
+	$(MKDIR_P) $(midnightetadir)/gtk-2.0/Scrollbars
+	$(MKDIR_P) $(midnightetadir)/gtk-2.0/Shadows
+	$(MKDIR_P) $(midnightetadir)/gtk-2.0/Spin
+	$(MKDIR_P) $(midnightetadir)/gtk-2.0/Toolbar
+	cp -Rv $(gtk2_midnight_eta_file) $(midnightetadir)/gtk-2.0
+	cp -Rv $(gtk2_midnight_eta_gtkrc_file) $(midnightetadir)/gtk-2.0/gtkrc
+	cp -Rv $(gtk2_midnight_arrow_file) $(midnightetadir)/gtk-2.0/Arrows
+	cp -Rv $(gtk2_midnight_button_file) $(midnightetadir)/gtk-2.0/Buttons
+	cp -Rv $(gtk2_midnight_checkradio_file) $(midnightetadir)/gtk-2.0/Check-Radio
+	cp -Rv $(gtk2_midnight_column_file) $(midnightetadir)/gtk-2.0/Column
+	cp -Rv $(gtk2_midnight_entry_file) $(midnightetadir)/gtk-2.0/Entry
+	cp -Rv $(gtk2_midnight_handle_file) $(midnightetadir)/gtk-2.0/Handles
+	cp -Rv $(gtk2_midnight_line_file) $(midnightetadir)/gtk-2.0/Lines
+	cp -Rv $(gtk2_midnight_other_file) $(midnightetadir)/gtk-2.0/Others
+	cp -Rv $(gtk2_midnight_progress_file) $(midnightetadir)/gtk-2.0/ProgressBar
+	cp -Rv $(gtk2_midnight_range_file) $(midnightetadir)/gtk-2.0/Range
+	cp -Rv $(gtk2_midnight_scrollbar_file) $(midnightetadir)/gtk-2.0/Scrollbars
+	cp -Rv $(gtk2_midnight_shadow_file) $(midnightetadir)/gtk-2.0/Shadows
+	cp -Rv $(gtk2_midnight_spin_file) $(midnightetadir)/gtk-2.0/Spin
+	cp -Rv $(gtk2_midnight_toolbar_file) $(midnightetadir)/gtk-2.0/Toolbar
 
 if ENABLE_GTK_NEXT
 	$(MKDIR_P) $(adaptadir)/gtk-4.0
@@ -1018,12 +1018,12 @@ if ENABLE_GTK_NEXT
 	$(MKDIR_P) $(brilaetadir)/gtk-4.0
 	cp -Rv $(gtknextbrilaeta_file) $(brilaetadir)/gtk-4.0
 	cp -Rv $(gtk3_thumb_file) $(brilaetadir)/gtk-4.0
-	$(MKDIR_P) $(noktodir)/gtk-4.0
-	cp -Rv $(gtknextnokto_file) $(noktodir)/gtk-4.0
-	cp -Rv $(gtk3_darkthumb_file) $(noktodir)/gtk-4.0/thumbnail.png
-	$(MKDIR_P) $(noktoetadir)/gtk-4.0
-	cp -Rv $(gtknextnoktoeta_file) $(noktoetadir)/gtk-4.0
-	cp -Rv $(gtk3_darkthumb_file) $(noktoetadir)/gtk-4.0/thumbnail.png
+	$(MKDIR_P) $(midnightdir)/gtk-4.0
+	cp -Rv $(gtknextmidnight_file) $(midnightdir)/gtk-4.0
+	cp -Rv $(gtk3_darkthumb_file) $(midnightdir)/gtk-4.0/thumbnail.png
+	$(MKDIR_P) $(midnightetadir)/gtk-4.0
+	cp -Rv $(gtknextmidnighteta_file) $(midnightetadir)/gtk-4.0
+	cp -Rv $(gtk3_darkthumb_file) $(midnightetadir)/gtk-4.0/thumbnail.png
 endif
 
 if ENABLE_XFCE
@@ -1031,8 +1031,8 @@ if ENABLE_XFCE
 	cp -Rv $(xfcenotify_file) $(adaptadir)/xfce-notify-4.0
 	$(MKDIR_P) $(briladir)/xfce-notify-4.0
 	cp -Rv $(xfcenotifybrila_file) $(briladir)/xfce-notify-4.0
-	$(MKDIR_P) $(noktodir)/xfce-notify-4.0
-	cp -Rv $(xfcenotifynokto_file) $(noktodir)/xfce-notify-4.0
+	$(MKDIR_P) $(midnightdir)/xfce-notify-4.0
+	cp -Rv $(xfcenotifymidnight_file) $(midnightdir)/xfce-notify-4.0
 endif
 
 # *******************
@@ -1040,11 +1040,11 @@ endif
 # *******************
 
 uninstall-local:
-	test -e $(noktodir)/index.theme && rm -rfv $(noktodir)/index.theme
-	test -e $(noktodir)/gtk-3.0 && rm -rfv $(noktodir)/gtk-3.0
-	test -e $(noktodir)/gtk-3.22 && rm -rfv $(noktodir)/gtk-3.22
-	test -e $(noktodir)/gtk-3.24 && rm -rfv $(noktodir)/gtk-3.24
-	test -e $(noktodir)/gtk-2.0 && rm -rfv $(noktodir)/gtk-2.0
+	test -e $(midnightdir)/index.theme && rm -rfv $(midnightdir)/index.theme
+	test -e $(midnightdir)/gtk-3.0 && rm -rfv $(midnightdir)/gtk-3.0
+	test -e $(midnightdir)/gtk-3.22 && rm -rfv $(midnightdir)/gtk-3.22
+	test -e $(midnightdir)/gtk-3.24 && rm -rfv $(midnightdir)/gtk-3.24
+	test -e $(midnightdir)/gtk-2.0 && rm -rfv $(midnightdir)/gtk-2.0
 
 	test -e $(briladir)/index.theme && rm -rfv $(briladir)/index.theme
 	test -e $(briladir)/gtk-3.0 && rm -rfv $(briladir)/gtk-3.0
@@ -1058,11 +1058,11 @@ uninstall-local:
 	test -e $(adaptadir)/gtk-3.24 && rm -rfv $(adaptadir)/gtk-3.24
 	test -e $(adaptadir)/gtk-2.0 && rm -rfv $(adaptadir)/gtk-2.0
 
-	test -e $(noktoetadir)/index.theme && rm -rfv $(noktoetadir)/index.theme
-	test -e $(noktoetadir)/gtk-3.0 && rm -rfv $(noktoetadir)/gtk-3.0
-	test -e $(noktoetadir)/gtk-3.22 && rm -rfv $(noktoetadir)/gtk-3.22
-	test -e $(noktoetadir)/gtk-3.24 && rm -rfv $(noktoetadir)/gtk-3.24
-	test -e $(noktoetadir)/gtk-2.0 && rm -rfv $(noktoetadir)/gtk-2.0
+	test -e $(midnightetadir)/index.theme && rm -rfv $(midnightetadir)/index.theme
+	test -e $(midnightetadir)/gtk-3.0 && rm -rfv $(midnightetadir)/gtk-3.0
+	test -e $(midnightetadir)/gtk-3.22 && rm -rfv $(midnightetadir)/gtk-3.22
+	test -e $(midnightetadir)/gtk-3.24 && rm -rfv $(midnightetadir)/gtk-3.24
+	test -e $(midnightetadir)/gtk-2.0 && rm -rfv $(midnightetadir)/gtk-2.0
 
 	test -e $(brilaetadir)/index.theme && rm -rfv $(brilaetadir)/index.theme
 	test -e $(brilaetadir)/gtk-3.0 && rm -rfv $(brilaetadir)/gtk-3.0
@@ -1077,11 +1077,11 @@ uninstall-local:
 	test -e $(adaptaetadir)/gtk-2.0 && rm -rfv $(adaptaetadir)/gtk-2.0
 
 if ENABLE_GTK_NEXT
-	test -e $(noktodir)/gtk-4.0 && rm -rfv $(noktodir)/gtk-4.0
+	test -e $(midnightdir)/gtk-4.0 && rm -rfv $(midnightdir)/gtk-4.0
 	test -e $(briladir)/gtk-4.0 && rm -rfv $(briladir)/gtk-4.0
 	test -e $(adaptadir)/gtk-4.0 && rm -rfv $(adaptadir)/gtk-4.0
 
-	test -e $(noktoetadir)/gtk-4.0 && rm -rfv $(noktoetadir)/gtk-4.0
+	test -e $(midnightetadir)/gtk-4.0 && rm -rfv $(midnightetadir)/gtk-4.0
 	test -e $(brilaetadir)/gtk-4.0 && rm -rfv $(brilaetadir)/gtk-4.0
 	test -e $(adaptaetadir)/gtk-4.0 && rm -rfv $(adaptaetadir)/gtk-4.0
 endif
@@ -1091,8 +1091,8 @@ if ENABLE_XFCE
 		rm -rfv $(adaptadir)/xfce-notify-4.0/gtk.css
 	test -e $(briladir)/xfce-notify-4.0/gtk.css && \
 		rm -rfv $(briladir)/xfce-notify-4.0/gtk.css
-	test -e $(noktodir)/xfce-notify-4.0/gtk.css && \
-		rm -rfv $(noktodir)/xfce-notify-4.0/gtk.css
+	test -e $(midnightdir)/xfce-notify-4.0/gtk.css && \
+		rm -rfv $(midnightdir)/xfce-notify-4.0/gtk.css
 endif
 
 # ****************************
@@ -1120,12 +1120,12 @@ CLEANFILES = \
 	$(srcdir)/gtk-3.20-brila-eta/gtk-contained.css \
 	$(srcdir)/gtk-3.20-brila-eta/gtk-contained-dark.css \
 	$(srcdir)/gtk-3.20-brila-eta/gtk.gresource \
-	$(srcdir)/gtk-3.20-nokto/gtk.css \
-	$(srcdir)/gtk-3.20-nokto/gtk-contained-dark.css \
-	$(srcdir)/gtk-3.20-nokto/gtk.gresource \
-	$(srcdir)/gtk-3.20-nokto-eta/gtk.css \
-	$(srcdir)/gtk-3.20-nokto-eta/gtk-contained-dark.css \
-	$(srcdir)/gtk-3.20-nokto-eta/gtk.gresource \
+	$(srcdir)/gtk-3.20-midnight/gtk.css \
+	$(srcdir)/gtk-3.20-midnight/gtk-contained-dark.css \
+	$(srcdir)/gtk-3.20-midnight/gtk.gresource \
+	$(srcdir)/gtk-3.20-midnight-eta/gtk.css \
+	$(srcdir)/gtk-3.20-midnight-eta/gtk-contained-dark.css \
+	$(srcdir)/gtk-3.20-midnight-eta/gtk.gresource \
 	$(srcdir)/gtk-3.22/gtk.css \
 	$(srcdir)/gtk-3.22/gtk-dark.css \
 	$(srcdir)/gtk-3.22/gtk-contained.css \
@@ -1146,12 +1146,12 @@ CLEANFILES = \
 	$(srcdir)/gtk-3.22-brila-eta/gtk-contained.css \
 	$(srcdir)/gtk-3.22-brila-eta/gtk-contained-dark.css \
 	$(srcdir)/gtk-3.22-brila-eta/gtk.gresource \
-	$(srcdir)/gtk-3.22-nokto/gtk.css \
-	$(srcdir)/gtk-3.22-nokto/gtk-contained-dark.css \
-	$(srcdir)/gtk-3.22-nokto/gtk.gresource \
-	$(srcdir)/gtk-3.22-nokto-eta/gtk.css \
-	$(srcdir)/gtk-3.22-nokto-eta/gtk-contained-dark.css \
-	$(srcdir)/gtk-3.22-nokto-eta/gtk.gresource \
+	$(srcdir)/gtk-3.22-midnight/gtk.css \
+	$(srcdir)/gtk-3.22-midnight/gtk-contained-dark.css \
+	$(srcdir)/gtk-3.22-midnight/gtk.gresource \
+	$(srcdir)/gtk-3.22-midnight-eta/gtk.css \
+	$(srcdir)/gtk-3.22-midnight-eta/gtk-contained-dark.css \
+	$(srcdir)/gtk-3.22-midnight-eta/gtk.gresource \
 	$(srcdir)/gtk-3.24/gtk.css \
 	$(srcdir)/gtk-3.24/gtk-dark.css \
 	$(srcdir)/gtk-3.24/gtk-contained.css \
@@ -1172,12 +1172,12 @@ CLEANFILES = \
 	$(srcdir)/gtk-3.24-brila-eta/gtk-contained.css \
 	$(srcdir)/gtk-3.24-brila-eta/gtk-contained-dark.css \
 	$(srcdir)/gtk-3.24-brila-eta/gtk.gresource \
-	$(srcdir)/gtk-3.24-nokto/gtk.css \
-	$(srcdir)/gtk-3.24-nokto/gtk-contained-dark.css \
-	$(srcdir)/gtk-3.24-nokto/gtk.gresource \
-	$(srcdir)/gtk-3.24-nokto-eta/gtk.css \
-	$(srcdir)/gtk-3.24-nokto-eta/gtk-contained-dark.css \
-	$(srcdir)/gtk-3.24-nokto-eta/gtk.gresource \
+	$(srcdir)/gtk-3.24-midnight/gtk.css \
+	$(srcdir)/gtk-3.24-midnight/gtk-contained-dark.css \
+	$(srcdir)/gtk-3.24-midnight/gtk.gresource \
+	$(srcdir)/gtk-3.24-midnight-eta/gtk.css \
+	$(srcdir)/gtk-3.24-midnight-eta/gtk-contained-dark.css \
+	$(srcdir)/gtk-3.24-midnight-eta/gtk.gresource \
 	$(srcdir)/asset/assets-gtk2/*/*.svg \
 	$(srcdir)/asset/assets-gtk2/*/*.png \
 	$(srcdir)/asset/assets-gtk3/*.svg \
@@ -1193,7 +1193,7 @@ CLEANFILES = \
 	$(srcdir)/gtk-2.0/gtkrc-dark-eta \
 	$(srcdir)/xfce-notify-4.0/gtk.css \
 	$(srcdir)/xfce-notify-4.0-brila/gtk.css \
-	$(srcdir)/xfce-notify-4.0-nokto/gtk.css
+	$(srcdir)/xfce-notify-4.0-midnight/gtk.css
 if ENABLE_GTK_NEXT
 CLEANFILES += \
 	$(srcdir)/gtk-4.0/gtk.css \
@@ -1216,12 +1216,12 @@ CLEANFILES += \
 	$(srcdir)/gtk-4.0-brila-eta/gtk-contained.css \
 	$(srcdir)/gtk-4.0-brila-eta/gtk-contained-dark.css \
 	$(srcdir)/gtk-4.0-brila-eta/gtk.gresource \
-	$(srcdir)/gtk-4.0-nokto/gtk.css \
-	$(srcdir)/gtk-4.0-nokto/gtk-contained-dark.css \
-	$(srcdir)/gtk-4.0-nokto/gtk.gresource \
-	$(srcdir)/gtk-4.0-nokto-eta/gtk.css \
-	$(srcdir)/gtk-4.0-nokto-eta/gtk-contained-dark.css \
-	$(srcdir)/gtk-4.0-nokto-eta/gtk.gresource
+	$(srcdir)/gtk-4.0-midnight/gtk.css \
+	$(srcdir)/gtk-4.0-midnight/gtk-contained-dark.css \
+	$(srcdir)/gtk-4.0-midnight/gtk.gresource \
+	$(srcdir)/gtk-4.0-midnight-eta/gtk.css \
+	$(srcdir)/gtk-4.0-midnight-eta/gtk-contained-dark.css \
+	$(srcdir)/gtk-4.0-midnight-eta/gtk.gresource
 endif
 
 DISTCLEANFILES = \

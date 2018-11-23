@@ -1,10 +1,10 @@
 themedir     = $(datadir)/themes
 adaptadir    = $(DESTDIR)$(themedir)/Adapta
 briladir     = $(DESTDIR)$(themedir)/Adapta-Brila
-noktodir     = $(DESTDIR)$(themedir)/Adapta-Nokto
+midnightdir     = $(DESTDIR)$(themedir)/Adapta-Midnight
 adaptaetadir = $(DESTDIR)$(themedir)/Adapta-Eta
 brilaetadir  = $(DESTDIR)$(themedir)/Adapta-Brila-Eta
-noktoetadir  = $(DESTDIR)$(themedir)/Adapta-Nokto-Eta
+midnightetadir  = $(DESTDIR)$(themedir)/Adapta-Midnight-Eta
 
 shelldir   = $(srcdir)/gnome-shell
 shell_file = \
@@ -128,55 +128,55 @@ shell_brila_asset_file = \
 	$(shellbriladir)/assets/window-close-hover.svg \
 	$(shellbriladir)/assets/window-close.svg
 
-shellnoktodir    = $(srcdir)/gnome-shell-nokto
-shell_nokto_file = \
-	$(shellnoktodir)/gnome-shell.css \
-	$(shellnoktodir)/gnome-shell-theme.gresource \
-	$(shellnoktodir)/key-enter.svg \
-	$(shellnoktodir)/key-enter-active.svg \
-	$(shellnoktodir)/key-hide.svg \
-	$(shellnoktodir)/key-layout.svg \
-	$(shellnoktodir)/key-shift.svg \
-	$(shellnoktodir)/key-shift-latched-uppercase.svg \
-	$(shellnoktodir)/key-shift-uppercase.svg \
-	$(shellnoktodir)/message-indicator-symbolic.svg \
-	$(shellnoktodir)/no-events.svg \
-	$(shellnoktodir)/no-notifications.svg \
-	$(shellnoktodir)/noise-texture.png \
-	$(shellnoktodir)/pad-osd.css \
-	$(shellnoktodir)/process-working.svg \
-	$(shellnoktodir)/toggle-off.svg \
-	$(shellnoktodir)/toggle-on.svg
-shell_nokto_classic_file = \
-	$(shellnoktodir)/extensions/window-list/classic.css \
-	$(shellnoktodir)/extensions/window-list/stylesheet.css
-shell_nokto_wtd_file = \
-	$(shellnoktodir)/extensions/workspaces-to-dock/workspaces-to-dock.css
+shellmidnightdir    = $(srcdir)/gnome-shell-midnight
+shell_midnight_file = \
+	$(shellmidnightdir)/gnome-shell.css \
+	$(shellmidnightdir)/gnome-shell-theme.gresource \
+	$(shellmidnightdir)/key-enter.svg \
+	$(shellmidnightdir)/key-enter-active.svg \
+	$(shellmidnightdir)/key-hide.svg \
+	$(shellmidnightdir)/key-layout.svg \
+	$(shellmidnightdir)/key-shift.svg \
+	$(shellmidnightdir)/key-shift-latched-uppercase.svg \
+	$(shellmidnightdir)/key-shift-uppercase.svg \
+	$(shellmidnightdir)/message-indicator-symbolic.svg \
+	$(shellmidnightdir)/no-events.svg \
+	$(shellmidnightdir)/no-notifications.svg \
+	$(shellmidnightdir)/noise-texture.png \
+	$(shellmidnightdir)/pad-osd.css \
+	$(shellmidnightdir)/process-working.svg \
+	$(shellmidnightdir)/toggle-off.svg \
+	$(shellmidnightdir)/toggle-on.svg
+shell_midnight_classic_file = \
+	$(shellmidnightdir)/extensions/window-list/classic.css \
+	$(shellmidnightdir)/extensions/window-list/stylesheet.css
+shell_midnight_wtd_file = \
+	$(shellmidnightdir)/extensions/workspaces-to-dock/workspaces-to-dock.css
 if ENABLE_GNOME
 if GNOME_IS_326_OR_NEWER
-shell_nokto_gdm3_file = $(shellnoktodir)/gdm3-Adapta-Nokto.css
+shell_midnight_gdm3_file = $(shellmidnightdir)/gdm3-Adapta-Midnight.css
 endif
 endif
-shell_nokto_asset_file = \
-	$(shellnoktodir)/assets/calendar-arrow-left-hover.svg \
-	$(shellnoktodir)/assets/calendar-arrow-left.svg \
-	$(shellnoktodir)/assets/calendar-arrow-right-hover.svg \
-	$(shellnoktodir)/assets/calendar-arrow-right.svg \
-	$(shellnoktodir)/assets/checkbox-hover.svg \
-	$(shellnoktodir)/assets/checkbox-off-hover.svg \
-	$(shellnoktodir)/assets/checkbox-off.svg \
-	$(shellnoktodir)/assets/checkbox.svg \
-	$(shellnoktodir)/assets/corner-ripple-ltr.svg \
-	$(shellnoktodir)/assets/corner-ripple-rtl.svg \
-	$(shellnoktodir)/assets/dash-placeholder.svg \
-	$(shellnoktodir)/assets/go-down.svg \
-	$(shellnoktodir)/assets/go-up.svg \
-	$(shellnoktodir)/assets/media-control-active.svg \
-	$(shellnoktodir)/assets/media-control-hover.svg \
-	$(shellnoktodir)/assets/more-results.svg \
-	$(shellnoktodir)/assets/window-close-active.svg \
-	$(shellnoktodir)/assets/window-close-hover.svg \
-	$(shellnoktodir)/assets/window-close.svg
+shell_midnight_asset_file = \
+	$(shellmidnightdir)/assets/calendar-arrow-left-hover.svg \
+	$(shellmidnightdir)/assets/calendar-arrow-left.svg \
+	$(shellmidnightdir)/assets/calendar-arrow-right-hover.svg \
+	$(shellmidnightdir)/assets/calendar-arrow-right.svg \
+	$(shellmidnightdir)/assets/checkbox-hover.svg \
+	$(shellmidnightdir)/assets/checkbox-off-hover.svg \
+	$(shellmidnightdir)/assets/checkbox-off.svg \
+	$(shellmidnightdir)/assets/checkbox.svg \
+	$(shellmidnightdir)/assets/corner-ripple-ltr.svg \
+	$(shellmidnightdir)/assets/corner-ripple-rtl.svg \
+	$(shellmidnightdir)/assets/dash-placeholder.svg \
+	$(shellmidnightdir)/assets/go-down.svg \
+	$(shellmidnightdir)/assets/go-up.svg \
+	$(shellmidnightdir)/assets/media-control-active.svg \
+	$(shellmidnightdir)/assets/media-control-hover.svg \
+	$(shellmidnightdir)/assets/more-results.svg \
+	$(shellmidnightdir)/assets/window-close-active.svg \
+	$(shellmidnightdir)/assets/window-close-hover.svg \
+	$(shellmidnightdir)/assets/window-close.svg
 
 shelletadir   = $(srcdir)/gnome-shell-eta
 shell_eta_file = \
@@ -278,54 +278,54 @@ shell_brila_eta_asset_file = \
 	$(shellbrilaetadir)/assets/window-close-hover.svg \
 	$(shellbrilaetadir)/assets/window-close.svg
 
-shellnoktoetadir     = $(srcdir)/gnome-shell-nokto-eta
-shell_nokto_eta_file = \
-	$(shellnoktoetadir)/gnome-shell.css \
-	$(shellnoktoetadir)/gnome-shell-theme.gresource \
-	$(shellnoktoetadir)/key-enter.svg \
-	$(shellnoktoetadir)/key-enter-active.svg \
-	$(shellnoktoetadir)/key-hide.svg \
-	$(shellnoktoetadir)/key-layout.svg \
-	$(shellnoktoetadir)/key-shift.svg \
-	$(shellnoktoetadir)/key-shift-latched-uppercase.svg \
-	$(shellnoktoetadir)/key-shift-uppercase.svg \
-	$(shellnoktoetadir)/message-indicator-symbolic.svg \
-	$(shellnoktoetadir)/no-events.svg \
-	$(shellnoktoetadir)/no-notifications.svg \
-	$(shellnoktoetadir)/noise-texture.png \
-	$(shellnoktoetadir)/process-working.svg \
-	$(shellnoktoetadir)/toggle-off.svg \
-	$(shellnoktoetadir)/toggle-on.svg
-shell_nokto_eta_classic_file = \
-	$(shellnoktoetadir)/extensions/window-list/classic.css \
-	$(shellnoktoetadir)/extensions/window-list/stylesheet.css
-shell_nokto_eta_wtd_file = \
-	$(shellnoktoetadir)/extensions/workspaces-to-dock/workspaces-to-dock.css
+shellmidnightetadir     = $(srcdir)/gnome-shell-midnight-eta
+shell_midnight_eta_file = \
+	$(shellmidnightetadir)/gnome-shell.css \
+	$(shellmidnightetadir)/gnome-shell-theme.gresource \
+	$(shellmidnightetadir)/key-enter.svg \
+	$(shellmidnightetadir)/key-enter-active.svg \
+	$(shellmidnightetadir)/key-hide.svg \
+	$(shellmidnightetadir)/key-layout.svg \
+	$(shellmidnightetadir)/key-shift.svg \
+	$(shellmidnightetadir)/key-shift-latched-uppercase.svg \
+	$(shellmidnightetadir)/key-shift-uppercase.svg \
+	$(shellmidnightetadir)/message-indicator-symbolic.svg \
+	$(shellmidnightetadir)/no-events.svg \
+	$(shellmidnightetadir)/no-notifications.svg \
+	$(shellmidnightetadir)/noise-texture.png \
+	$(shellmidnightetadir)/process-working.svg \
+	$(shellmidnightetadir)/toggle-off.svg \
+	$(shellmidnightetadir)/toggle-on.svg
+shell_midnight_eta_classic_file = \
+	$(shellmidnightetadir)/extensions/window-list/classic.css \
+	$(shellmidnightetadir)/extensions/window-list/stylesheet.css
+shell_midnight_eta_wtd_file = \
+	$(shellmidnightetadir)/extensions/workspaces-to-dock/workspaces-to-dock.css
 if ENABLE_GNOME
 if GNOME_IS_326_OR_NEWER
-shell_nokto_eta_gdm3_file = $(shellnoktoetadir)/gdm3-Adapta-Nokto-Eta.css
+shell_midnight_eta_gdm3_file = $(shellmidnightetadir)/gdm3-Adapta-Midnight-Eta.css
 endif
 endif
-shell_nokto_eta_asset_file = \
-	$(shellnoktoetadir)/assets/calendar-arrow-left-hover.svg \
-	$(shellnoktoetadir)/assets/calendar-arrow-left.svg \
-	$(shellnoktoetadir)/assets/calendar-arrow-right-hover.svg \
-	$(shellnoktoetadir)/assets/calendar-arrow-right.svg \
-	$(shellnoktoetadir)/assets/checkbox-hover.svg \
-	$(shellnoktoetadir)/assets/checkbox-off-hover.svg \
-	$(shellnoktoetadir)/assets/checkbox-off.svg \
-	$(shellnoktoetadir)/assets/checkbox.svg \
-	$(shellnoktoetadir)/assets/corner-ripple-ltr.svg \
-	$(shellnoktoetadir)/assets/corner-ripple-rtl.svg \
-	$(shellnoktoetadir)/assets/dash-placeholder.svg \
-	$(shellnoktoetadir)/assets/go-down.svg \
-	$(shellnoktoetadir)/assets/go-up.svg \
-	$(shellnoktoetadir)/assets/media-control-active.svg \
-	$(shellnoktoetadir)/assets/media-control-hover.svg \
-	$(shellnoktoetadir)/assets/more-results.svg \
-	$(shellnoktoetadir)/assets/window-close-active.svg \
-	$(shellnoktoetadir)/assets/window-close-hover.svg \
-	$(shellnoktoetadir)/assets/window-close.svg
+shell_midnight_eta_asset_file = \
+	$(shellmidnightetadir)/assets/calendar-arrow-left-hover.svg \
+	$(shellmidnightetadir)/assets/calendar-arrow-left.svg \
+	$(shellmidnightetadir)/assets/calendar-arrow-right-hover.svg \
+	$(shellmidnightetadir)/assets/calendar-arrow-right.svg \
+	$(shellmidnightetadir)/assets/checkbox-hover.svg \
+	$(shellmidnightetadir)/assets/checkbox-off-hover.svg \
+	$(shellmidnightetadir)/assets/checkbox-off.svg \
+	$(shellmidnightetadir)/assets/checkbox.svg \
+	$(shellmidnightetadir)/assets/corner-ripple-ltr.svg \
+	$(shellmidnightetadir)/assets/corner-ripple-rtl.svg \
+	$(shellmidnightetadir)/assets/dash-placeholder.svg \
+	$(shellmidnightetadir)/assets/go-down.svg \
+	$(shellmidnightetadir)/assets/go-up.svg \
+	$(shellmidnightetadir)/assets/media-control-active.svg \
+	$(shellmidnightetadir)/assets/media-control-hover.svg \
+	$(shellmidnightetadir)/assets/more-results.svg \
+	$(shellmidnightetadir)/assets/window-close-active.svg \
+	$(shellmidnightetadir)/assets/window-close-hover.svg \
+	$(shellmidnightetadir)/assets/window-close.svg
 
 cinnamondir   = $(srcdir)/cinnamon
 cinnamon_file = \
@@ -407,45 +407,45 @@ cinnamon_brila_asset_switch_file = \
 cinnamon_brila_asset_thumb_file = \
 	$(cinnamonbriladir)/assets/thumbnail.png
 
-cinnamonnoktodir    = $(srcdir)/cinnamon-nokto
-cinnamon_nokto_file = \
-	$(cinnamonnoktodir)/cinnamon.css
-cinnamon_nokto_asset_checkbox_file = \
-	$(cinnamonnoktodir)/assets/checkbox/checkbox-checked.svg \
-	$(cinnamonnoktodir)/assets/checkbox/checkbox-unchecked.svg \
-	$(cinnamonnoktodir)/assets/checkbox/radiobutton-checked.svg \
-	$(cinnamonnoktodir)/assets/checkbox/radiobutton-unchecked.svg
-cinnamon_nokto_asset_menu_file = \
-	$(cinnamonnoktodir)/assets/menu/menu-hover.svg \
-	$(cinnamonnoktodir)/assets/menu/menu-separator.svg \
-	$(cinnamonnoktodir)/assets/menu/menu.svg \
-	$(cinnamonnoktodir)/assets/menu/submenu.svg
-cinnamon_nokto_asset_misc_file = \
-	$(cinnamonnoktodir)/assets/misc/add-workspace-active.svg \
-	$(cinnamonnoktodir)/assets/misc/add-workspace-hover.svg \
-	$(cinnamonnoktodir)/assets/misc/add-workspace.svg \
-	$(cinnamonnoktodir)/assets/misc/button-box.svg \
-	$(cinnamonnoktodir)/assets/misc/calendar-arrow-left.svg \
-	$(cinnamonnoktodir)/assets/misc/calendar-arrow-right.svg \
-	$(cinnamonnoktodir)/assets/misc/close-active.svg \
-	$(cinnamonnoktodir)/assets/misc/close-hover.svg \
-	$(cinnamonnoktodir)/assets/misc/close.svg \
-	$(cinnamonnoktodir)/assets/misc/corner-ripple.svg \
-	$(cinnamonnoktodir)/assets/misc/desklet-header.svg \
-	$(cinnamonnoktodir)/assets/misc/desklet.svg \
-	$(cinnamonnoktodir)/assets/misc/message.svg \
-	$(cinnamonnoktodir)/assets/misc/osd.svg \
-	$(cinnamonnoktodir)/assets/misc/overview-hover.svg \
-	$(cinnamonnoktodir)/assets/misc/overview.svg \
-	$(cinnamonnoktodir)/assets/misc/trash-icon.svg
-cinnamon_nokto_asset_panel_file = \
-	$(cinnamonnoktodir)/assets/panel/activities-active.svg \
-	$(cinnamonnoktodir)/assets/panel/activities.svg
-cinnamon_nokto_asset_switch_file = \
-	$(cinnamonnoktodir)/assets/switch/switch-off.svg \
-	$(cinnamonnoktodir)/assets/switch/switch-on.svg
-cinnamon_nokto_asset_thumb_file = \
-	$(cinnamonnoktodir)/assets/thumbnail.png
+cinnamonmidnightdir    = $(srcdir)/cinnamon-midnight
+cinnamon_midnight_file = \
+	$(cinnamonmidnightdir)/cinnamon.css
+cinnamon_midnight_asset_checkbox_file = \
+	$(cinnamonmidnightdir)/assets/checkbox/checkbox-checked.svg \
+	$(cinnamonmidnightdir)/assets/checkbox/checkbox-unchecked.svg \
+	$(cinnamonmidnightdir)/assets/checkbox/radiobutton-checked.svg \
+	$(cinnamonmidnightdir)/assets/checkbox/radiobutton-unchecked.svg
+cinnamon_midnight_asset_menu_file = \
+	$(cinnamonmidnightdir)/assets/menu/menu-hover.svg \
+	$(cinnamonmidnightdir)/assets/menu/menu-separator.svg \
+	$(cinnamonmidnightdir)/assets/menu/menu.svg \
+	$(cinnamonmidnightdir)/assets/menu/submenu.svg
+cinnamon_midnight_asset_misc_file = \
+	$(cinnamonmidnightdir)/assets/misc/add-workspace-active.svg \
+	$(cinnamonmidnightdir)/assets/misc/add-workspace-hover.svg \
+	$(cinnamonmidnightdir)/assets/misc/add-workspace.svg \
+	$(cinnamonmidnightdir)/assets/misc/button-box.svg \
+	$(cinnamonmidnightdir)/assets/misc/calendar-arrow-left.svg \
+	$(cinnamonmidnightdir)/assets/misc/calendar-arrow-right.svg \
+	$(cinnamonmidnightdir)/assets/misc/close-active.svg \
+	$(cinnamonmidnightdir)/assets/misc/close-hover.svg \
+	$(cinnamonmidnightdir)/assets/misc/close.svg \
+	$(cinnamonmidnightdir)/assets/misc/corner-ripple.svg \
+	$(cinnamonmidnightdir)/assets/misc/desklet-header.svg \
+	$(cinnamonmidnightdir)/assets/misc/desklet.svg \
+	$(cinnamonmidnightdir)/assets/misc/message.svg \
+	$(cinnamonmidnightdir)/assets/misc/osd.svg \
+	$(cinnamonmidnightdir)/assets/misc/overview-hover.svg \
+	$(cinnamonmidnightdir)/assets/misc/overview.svg \
+	$(cinnamonmidnightdir)/assets/misc/trash-icon.svg
+cinnamon_midnight_asset_panel_file = \
+	$(cinnamonmidnightdir)/assets/panel/activities-active.svg \
+	$(cinnamonmidnightdir)/assets/panel/activities.svg
+cinnamon_midnight_asset_switch_file = \
+	$(cinnamonmidnightdir)/assets/switch/switch-off.svg \
+	$(cinnamonmidnightdir)/assets/switch/switch-on.svg
+cinnamon_midnight_asset_thumb_file = \
+	$(cinnamonmidnightdir)/assets/thumbnail.png
 
 sassc_option = -M -t compact
 
@@ -461,18 +461,18 @@ if ENABLE_GNOME
 	$(MKDIR_P) $(srcdir)/gnome-shell-brila/assets
 	$(MKDIR_P) $(srcdir)/gnome-shell-brila/extensions/window-list
 	$(MKDIR_P) $(srcdir)/gnome-shell-brila/extensions/workspaces-to-dock/assets
-	$(MKDIR_P) $(srcdir)/gnome-shell-nokto/assets
-	$(MKDIR_P) $(srcdir)/gnome-shell-nokto/extensions/window-list
-	$(MKDIR_P) $(srcdir)/gnome-shell-nokto/extensions/workspaces-to-dock/assets
+	$(MKDIR_P) $(srcdir)/gnome-shell-midnight/assets
+	$(MKDIR_P) $(srcdir)/gnome-shell-midnight/extensions/window-list
+	$(MKDIR_P) $(srcdir)/gnome-shell-midnight/extensions/workspaces-to-dock/assets
 	$(MKDIR_P) $(srcdir)/gnome-shell-eta/assets
 	$(MKDIR_P) $(srcdir)/gnome-shell-eta/extensions/window-list
 	$(MKDIR_P) $(srcdir)/gnome-shell-eta/extensions/workspaces-to-dock/assets
 	$(MKDIR_P) $(srcdir)/gnome-shell-brila-eta/assets
 	$(MKDIR_P) $(srcdir)/gnome-shell-brila-eta/extensions/window-list
 	$(MKDIR_P) $(srcdir)/gnome-shell-brila-eta/extensions/workspaces-to-dock/assets
-	$(MKDIR_P) $(srcdir)/gnome-shell-nokto-eta/assets
-	$(MKDIR_P) $(srcdir)/gnome-shell-nokto-eta/extensions/window-list
-	$(MKDIR_P) $(srcdir)/gnome-shell-nokto-eta/extensions/workspaces-to-dock/assets
+	$(MKDIR_P) $(srcdir)/gnome-shell-midnight-eta/assets
+	$(MKDIR_P) $(srcdir)/gnome-shell-midnight-eta/extensions/window-list
+	$(MKDIR_P) $(srcdir)/gnome-shell-midnight-eta/extensions/workspaces-to-dock/assets
 
 	cd $(srcdir)/sass && \
 		$(SASSC) $(sassc_option) \
@@ -480,13 +480,13 @@ if ENABLE_GNOME
 		$(SASSC) $(sassc_option) \
 		gnome-shell/$(GNOME_SCSS_VERSION)/gnome-shell-light.scss ../gnome-shell-brila/gnome-shell.css && \
 		$(SASSC) $(sassc_option) \
-		gnome-shell/$(GNOME_SCSS_VERSION)/gnome-shell-dark.scss ../gnome-shell-nokto/gnome-shell.css && \
+		gnome-shell/$(GNOME_SCSS_VERSION)/gnome-shell-dark.scss ../gnome-shell-midnight/gnome-shell.css && \
 		$(SASSC) $(sassc_option) \
 		gnome-shell/$(GNOME_SCSS_VERSION)/gnome-shell-eta.scss ../gnome-shell-eta/gnome-shell.css && \
 		$(SASSC) $(sassc_option) \
 		gnome-shell/$(GNOME_SCSS_VERSION)/gnome-shell-light-eta.scss ../gnome-shell-brila-eta/gnome-shell.css && \
 		$(SASSC) $(sassc_option) \
-		gnome-shell/$(GNOME_SCSS_VERSION)/gnome-shell-dark-eta.scss ../gnome-shell-nokto-eta/gnome-shell.css
+		gnome-shell/$(GNOME_SCSS_VERSION)/gnome-shell-dark-eta.scss ../gnome-shell-midnight-eta/gnome-shell.css
 if GNOME_IS_326_OR_NEWER
 	cd $(srcdir)/sass && \
 		$(SASSC) $(sassc_option) \
@@ -494,13 +494,13 @@ if GNOME_IS_326_OR_NEWER
 		$(SASSC) $(sassc_option) \
 		gnome-shell/$(GNOME_SCSS_VERSION)/gdm3-light.scss ../gnome-shell-brila/gdm3-Adapta-Brila.css && \
 		$(SASSC) $(sassc_option) \
-		gnome-shell/$(GNOME_SCSS_VERSION)/gdm3-dark.scss ../gnome-shell-nokto/gdm3-Adapta-Nokto.css && \
+		gnome-shell/$(GNOME_SCSS_VERSION)/gdm3-dark.scss ../gnome-shell-midnight/gdm3-Adapta-Midnight.css && \
 		$(SASSC) $(sassc_option) \
 		gnome-shell/$(GNOME_SCSS_VERSION)/gdm3-eta.scss ../gnome-shell-eta/gdm3-Adapta-Eta.css && \
 		$(SASSC) $(sassc_option) \
 		gnome-shell/$(GNOME_SCSS_VERSION)/gdm3-light-eta.scss ../gnome-shell-brila-eta/gdm3-Adapta-Brila-Eta.css && \
 		$(SASSC) $(sassc_option) \
-		gnome-shell/$(GNOME_SCSS_VERSION)/gdm3-dark-eta.scss ../gnome-shell-nokto-eta/gdm3-Adapta-Nokto-Eta.css
+		gnome-shell/$(GNOME_SCSS_VERSION)/gdm3-dark-eta.scss ../gnome-shell-midnight-eta/gdm3-Adapta-Midnight-Eta.css
 endif
 	cd $(srcdir)/sass && \
 		$(SASSC) $(sassc_option) \
@@ -508,49 +508,49 @@ endif
 		$(SASSC) $(sassc_option) \
 		gnome-shell/$(GNOME_SCSS_VERSION)/pad-osd.scss ../gnome-shell-brila/pad-osd.css && \
 		$(SASSC) $(sassc_option) \
-		gnome-shell/$(GNOME_SCSS_VERSION)/pad-osd.scss ../gnome-shell-nokto/pad-osd.css && \
+		gnome-shell/$(GNOME_SCSS_VERSION)/pad-osd.scss ../gnome-shell-midnight/pad-osd.css && \
 		$(SASSC) $(sassc_option) \
 		gnome-shell/$(GNOME_SCSS_VERSION)/pad-osd.scss ../gnome-shell-eta/pad-osd.css && \
 		$(SASSC) $(sassc_option) \
 		gnome-shell/$(GNOME_SCSS_VERSION)/pad-osd.scss ../gnome-shell-brila-eta/pad-osd.css && \
 		$(SASSC) $(sassc_option) \
-		gnome-shell/$(GNOME_SCSS_VERSION)/pad-osd.scss ../gnome-shell-nokto-eta/pad-osd.css && \
+		gnome-shell/$(GNOME_SCSS_VERSION)/pad-osd.scss ../gnome-shell-midnight-eta/pad-osd.css && \
 		$(SASSC) $(sassc_option) \
 		gnome-shell/$(GNOME_SCSS_VERSION)/stylesheet-dark.scss ../gnome-shell/extensions/window-list/stylesheet.css && \
 		$(SASSC) $(sassc_option) \
 		gnome-shell/$(GNOME_SCSS_VERSION)/stylesheet-light.scss ../gnome-shell-brila/extensions/window-list/stylesheet.css && \
 		$(SASSC) $(sassc_option) \
-		gnome-shell/$(GNOME_SCSS_VERSION)/stylesheet-dark.scss ../gnome-shell-nokto/extensions/window-list/stylesheet.css && \
+		gnome-shell/$(GNOME_SCSS_VERSION)/stylesheet-dark.scss ../gnome-shell-midnight/extensions/window-list/stylesheet.css && \
 		$(SASSC) $(sassc_option) \
 		gnome-shell/$(GNOME_SCSS_VERSION)/stylesheet-dark.scss ../gnome-shell-eta/extensions/window-list/stylesheet.css && \
 		$(SASSC) $(sassc_option) \
 		gnome-shell/$(GNOME_SCSS_VERSION)/stylesheet-light.scss ../gnome-shell-brila-eta/extensions/window-list/stylesheet.css && \
 		$(SASSC) $(sassc_option) \
-		gnome-shell/$(GNOME_SCSS_VERSION)/stylesheet-dark.scss ../gnome-shell-nokto-eta/extensions/window-list/stylesheet.css && \
+		gnome-shell/$(GNOME_SCSS_VERSION)/stylesheet-dark.scss ../gnome-shell-midnight-eta/extensions/window-list/stylesheet.css && \
 		$(SASSC) $(sassc_option) \
 		gnome-shell/$(GNOME_SCSS_VERSION)/classic-dark.scss ../gnome-shell/extensions/window-list/classic.css && \
 		$(SASSC) $(sassc_option) \
 		gnome-shell/$(GNOME_SCSS_VERSION)/classic-light.scss ../gnome-shell-brila/extensions/window-list/classic.css && \
 		$(SASSC) $(sassc_option) \
-		gnome-shell/$(GNOME_SCSS_VERSION)/classic-dark.scss ../gnome-shell-nokto/extensions/window-list/classic.css && \
+		gnome-shell/$(GNOME_SCSS_VERSION)/classic-dark.scss ../gnome-shell-midnight/extensions/window-list/classic.css && \
 		$(SASSC) $(sassc_option) \
 		gnome-shell/$(GNOME_SCSS_VERSION)/classic-dark.scss ../gnome-shell-eta/extensions/window-list/classic.css && \
 		$(SASSC) $(sassc_option) \
 		gnome-shell/$(GNOME_SCSS_VERSION)/classic-light.scss ../gnome-shell-brila-eta/extensions/window-list/classic.css && \
 		$(SASSC) $(sassc_option) \
-		gnome-shell/$(GNOME_SCSS_VERSION)/classic-dark.scss ../gnome-shell-nokto-eta/extensions/window-list/classic.css && \
+		gnome-shell/$(GNOME_SCSS_VERSION)/classic-dark.scss ../gnome-shell-midnight-eta/extensions/window-list/classic.css && \
 		$(SASSC) $(sassc_option) \
 		gnome-shell/$(GNOME_SCSS_VERSION)/workspaces-to-dock-dark.scss ../gnome-shell/extensions/workspaces-to-dock/workspaces-to-dock.css && \
 		$(SASSC) $(sassc_option) \
 		gnome-shell/$(GNOME_SCSS_VERSION)/workspaces-to-dock-light.scss ../gnome-shell-brila/extensions/workspaces-to-dock/workspaces-to-dock.css && \
 		$(SASSC) $(sassc_option) \
-		gnome-shell/$(GNOME_SCSS_VERSION)/workspaces-to-dock-dark.scss ../gnome-shell-nokto/extensions/workspaces-to-dock/workspaces-to-dock.css && \
+		gnome-shell/$(GNOME_SCSS_VERSION)/workspaces-to-dock-dark.scss ../gnome-shell-midnight/extensions/workspaces-to-dock/workspaces-to-dock.css && \
 		$(SASSC) $(sassc_option) \
 		gnome-shell/$(GNOME_SCSS_VERSION)/workspaces-to-dock-dark.scss ../gnome-shell-eta/extensions/workspaces-to-dock/workspaces-to-dock.css && \
 		$(SASSC) $(sassc_option) \
 		gnome-shell/$(GNOME_SCSS_VERSION)/workspaces-to-dock-light.scss ../gnome-shell-brila-eta/extensions/workspaces-to-dock/workspaces-to-dock.css && \
 		$(SASSC) $(sassc_option) \
-		gnome-shell/$(GNOME_SCSS_VERSION)/workspaces-to-dock-dark.scss ../gnome-shell-nokto-eta/extensions/workspaces-to-dock/workspaces-to-dock.css
+		gnome-shell/$(GNOME_SCSS_VERSION)/workspaces-to-dock-dark.scss ../gnome-shell-midnight-eta/extensions/workspaces-to-dock/workspaces-to-dock.css
 
 	cd $(srcdir)/asset && ./clone-assets-gnome-shell.sh
 
@@ -560,8 +560,8 @@ endif
 	$(GLIB_COMPILE_RESOURCES) --sourcedir=$(shellbriladir) \
 				--target=$(shellbriladir)/gnome-shell-theme.gresource \
 				$(srcdir)/sass/gnome-shell/gnome-shell-theme.gresource.xml
-	$(GLIB_COMPILE_RESOURCES) --sourcedir=$(shellnoktodir) \
-				--target=$(shellnoktodir)/gnome-shell-theme.gresource \
+	$(GLIB_COMPILE_RESOURCES) --sourcedir=$(shellmidnightdir) \
+				--target=$(shellmidnightdir)/gnome-shell-theme.gresource \
 				$(srcdir)/sass/gnome-shell/gnome-shell-theme.gresource.xml
 	$(GLIB_COMPILE_RESOURCES) --sourcedir=$(shelletadir) \
 				--target=$(shelletadir)/gnome-shell-theme.gresource \
@@ -569,20 +569,20 @@ endif
 	$(GLIB_COMPILE_RESOURCES) --sourcedir=$(shellbrilaetadir) \
 				--target=$(shellbrilaetadir)/gnome-shell-theme.gresource \
 				$(srcdir)/sass/gnome-shell/gnome-shell-theme.gresource.xml
-	$(GLIB_COMPILE_RESOURCES) --sourcedir=$(shellnoktoetadir) \
-				--target=$(shellnoktoetadir)/gnome-shell-theme.gresource \
+	$(GLIB_COMPILE_RESOURCES) --sourcedir=$(shellmidnightetadir) \
+				--target=$(shellmidnightetadir)/gnome-shell-theme.gresource \
 				$(srcdir)/sass/gnome-shell/gnome-shell-theme.gresource.xml
 endif
 
 if ENABLE_CINNAMON
 	$(MKDIR_P) $(srcdir)/cinnamon
 	$(MKDIR_P) $(srcdir)/cinnamon-brila
-	$(MKDIR_P) $(srcdir)/cinnamon-nokto
+	$(MKDIR_P) $(srcdir)/cinnamon-midnight
 
 	cd $(srcdir)/sass && \
 		$(SASSC) $(sassc_option) cinnamon/cinnamon.scss ../cinnamon/cinnamon.css && \
 		$(SASSC) $(sassc_option) cinnamon/cinnamon-light.scss ../cinnamon-brila/cinnamon.css && \
-		$(SASSC) $(sassc_option) cinnamon/cinnamon-dark.scss ../cinnamon-nokto/cinnamon.css
+		$(SASSC) $(sassc_option) cinnamon/cinnamon-dark.scss ../cinnamon-midnight/cinnamon.css
 
 	$(MKDIR_P) $(srcdir)/cinnamon/assets
 	$(MKDIR_P) $(srcdir)/cinnamon/assets/checkbox
@@ -596,12 +596,12 @@ if ENABLE_CINNAMON
 	$(MKDIR_P) $(srcdir)/cinnamon-brila/assets/misc
 	$(MKDIR_P) $(srcdir)/cinnamon-brila/assets/panel
 	$(MKDIR_P) $(srcdir)/cinnamon-brila/assets/switch
-	$(MKDIR_P) $(srcdir)/cinnamon-nokto/assets
-	$(MKDIR_P) $(srcdir)/cinnamon-nokto/assets/checkbox
-	$(MKDIR_P) $(srcdir)/cinnamon-nokto/assets/menu
-	$(MKDIR_P) $(srcdir)/cinnamon-nokto/assets/misc
-	$(MKDIR_P) $(srcdir)/cinnamon-nokto/assets/panel
-	$(MKDIR_P) $(srcdir)/cinnamon-nokto/assets/switch
+	$(MKDIR_P) $(srcdir)/cinnamon-midnight/assets
+	$(MKDIR_P) $(srcdir)/cinnamon-midnight/assets/checkbox
+	$(MKDIR_P) $(srcdir)/cinnamon-midnight/assets/menu
+	$(MKDIR_P) $(srcdir)/cinnamon-midnight/assets/misc
+	$(MKDIR_P) $(srcdir)/cinnamon-midnight/assets/panel
+	$(MKDIR_P) $(srcdir)/cinnamon-midnight/assets/switch
 	cd $(srcdir)/asset && \
 		./clone-assets-cinnamon.sh && \
 		./render-assets-cinnamon-thumb.sh
@@ -645,20 +645,20 @@ if GNOME_IS_326_OR_NEWER
 	cp -Rv $(shell_brila_gdm3_file) $(briladir)/gnome-shell
 endif
 
-	$(MKDIR_P) $(noktodir)/gnome-shell
-	$(MKDIR_P) $(noktodir)/gnome-shell/assets
-	$(MKDIR_P) $(noktodir)/gnome-shell/extensions
-	$(MKDIR_P) $(noktodir)/gnome-shell/extensions/window-list
-	$(MKDIR_P) $(noktodir)/gnome-shell/extensions/workspaces-to-dock
-	$(MKDIR_P) $(noktodir)/gnome-shell/extensions/workspaces-to-dock/assets
-	cp -Rv $(shell_nokto_file) $(noktodir)/gnome-shell
-	cp -Rv $(shell_nokto_classic_file) $(noktodir)/gnome-shell/extensions/window-list
-	cp -Rv $(shell_nokto_wtd_file) $(noktodir)/gnome-shell/extensions/workspaces-to-dock
-	cp -Rv $(shell_nokto_asset_file) $(noktodir)/gnome-shell/assets
+	$(MKDIR_P) $(midnightdir)/gnome-shell
+	$(MKDIR_P) $(midnightdir)/gnome-shell/assets
+	$(MKDIR_P) $(midnightdir)/gnome-shell/extensions
+	$(MKDIR_P) $(midnightdir)/gnome-shell/extensions/window-list
+	$(MKDIR_P) $(midnightdir)/gnome-shell/extensions/workspaces-to-dock
+	$(MKDIR_P) $(midnightdir)/gnome-shell/extensions/workspaces-to-dock/assets
+	cp -Rv $(shell_midnight_file) $(midnightdir)/gnome-shell
+	cp -Rv $(shell_midnight_classic_file) $(midnightdir)/gnome-shell/extensions/window-list
+	cp -Rv $(shell_midnight_wtd_file) $(midnightdir)/gnome-shell/extensions/workspaces-to-dock
+	cp -Rv $(shell_midnight_asset_file) $(midnightdir)/gnome-shell/assets
 	cp -Rv $(shell_extension_workspace_asset_file) \
-		$(noktodir)/gnome-shell/extensions/workspaces-to-dock/assets
+		$(midnightdir)/gnome-shell/extensions/workspaces-to-dock/assets
 if GNOME_IS_326_OR_NEWER
-	cp -Rv $(shell_nokto_gdm3_file) $(noktodir)/gnome-shell
+	cp -Rv $(shell_midnight_gdm3_file) $(midnightdir)/gnome-shell
 endif
 
 	$(MKDIR_P) $(adaptaetadir)/gnome-shell
@@ -693,20 +693,20 @@ if GNOME_IS_326_OR_NEWER
 	cp -Rv $(shell_brila_eta_gdm3_file) $(brilaetadir)/gnome-shell
 endif
 
-	$(MKDIR_P) $(noktoetadir)/gnome-shell
-	$(MKDIR_P) $(noktoetadir)/gnome-shell/assets
-	$(MKDIR_P) $(noktoetadir)/gnome-shell/extensions
-	$(MKDIR_P) $(noktoetadir)/gnome-shell/extensions/window-list
-	$(MKDIR_P) $(noktoetadir)/gnome-shell/extensions/workspaces-to-dock
-	$(MKDIR_P) $(noktoetadir)/gnome-shell/extensions/workspaces-to-dock/assets
-	cp -Rv $(shell_nokto_eta_file) $(noktoetadir)/gnome-shell
-	cp -Rv $(shell_nokto_eta_classic_file) $(noktoetadir)/gnome-shell/extensions/window-list
-	cp -Rv $(shell_nokto_eta_wtd_file) $(noktoetadir)/gnome-shell/extensions/workspaces-to-dock
-	cp -Rv $(shell_nokto_eta_asset_file) $(noktoetadir)/gnome-shell/assets
+	$(MKDIR_P) $(midnightetadir)/gnome-shell
+	$(MKDIR_P) $(midnightetadir)/gnome-shell/assets
+	$(MKDIR_P) $(midnightetadir)/gnome-shell/extensions
+	$(MKDIR_P) $(midnightetadir)/gnome-shell/extensions/window-list
+	$(MKDIR_P) $(midnightetadir)/gnome-shell/extensions/workspaces-to-dock
+	$(MKDIR_P) $(midnightetadir)/gnome-shell/extensions/workspaces-to-dock/assets
+	cp -Rv $(shell_midnight_eta_file) $(midnightetadir)/gnome-shell
+	cp -Rv $(shell_midnight_eta_classic_file) $(midnightetadir)/gnome-shell/extensions/window-list
+	cp -Rv $(shell_midnight_eta_wtd_file) $(midnightetadir)/gnome-shell/extensions/workspaces-to-dock
+	cp -Rv $(shell_midnight_eta_asset_file) $(midnightetadir)/gnome-shell/assets
 	cp -Rv $(shell_extension_workspace_asset_file) \
-		$(noktoetadir)/gnome-shell/extensions/workspaces-to-dock/assets
+		$(midnightetadir)/gnome-shell/extensions/workspaces-to-dock/assets
 if GNOME_IS_326_OR_NEWER
-	cp -Rv $(shell_nokto_eta_gdm3_file) $(noktoetadir)/gnome-shell
+	cp -Rv $(shell_midnight_eta_gdm3_file) $(midnightetadir)/gnome-shell
 endif
 endif
 
@@ -757,27 +757,27 @@ if ENABLE_CINNAMON
 	cd $(briladir)/cinnamon && \
 		ln -sf ./assets/thumbnail.png thumbnail.png
 
-	$(MKDIR_P) $(noktodir)/cinnamon
-	$(MKDIR_P) $(noktodir)/cinnamon/assets
-	$(MKDIR_P) $(noktodir)/cinnamon/assets/checkbox
-	$(MKDIR_P) $(noktodir)/cinnamon/assets/menu
-	$(MKDIR_P) $(noktodir)/cinnamon/assets/misc
-	$(MKDIR_P) $(noktodir)/cinnamon/assets/panel
-	$(MKDIR_P) $(noktodir)/cinnamon/assets/switch
-	cp -Rv $(cinnamon_nokto_file) $(noktodir)/cinnamon
-	cp -Rv $(cinnamon_nokto_asset_checkbox_file) \
-		$(noktodir)/cinnamon/assets/checkbox
-	cp -Rv $(cinnamon_nokto_asset_menu_file) \
-		$(noktodir)/cinnamon/assets/menu
-	cp -Rv $(cinnamon_nokto_asset_misc_file) \
-		$(noktodir)/cinnamon/assets/misc
-	cp -Rv $(cinnamon_nokto_asset_panel_file) \
-		$(noktodir)/cinnamon/assets/panel
-	cp -Rv $(cinnamon_nokto_asset_switch_file) \
-		$(noktodir)/cinnamon/assets/switch
-	cp -Rv $(cinnamon_nokto_asset_thumb_file) \
-		$(noktodir)/cinnamon/assets
-	cd $(noktodir)/cinnamon && \
+	$(MKDIR_P) $(midnightdir)/cinnamon
+	$(MKDIR_P) $(midnightdir)/cinnamon/assets
+	$(MKDIR_P) $(midnightdir)/cinnamon/assets/checkbox
+	$(MKDIR_P) $(midnightdir)/cinnamon/assets/menu
+	$(MKDIR_P) $(midnightdir)/cinnamon/assets/misc
+	$(MKDIR_P) $(midnightdir)/cinnamon/assets/panel
+	$(MKDIR_P) $(midnightdir)/cinnamon/assets/switch
+	cp -Rv $(cinnamon_midnight_file) $(midnightdir)/cinnamon
+	cp -Rv $(cinnamon_midnight_asset_checkbox_file) \
+		$(midnightdir)/cinnamon/assets/checkbox
+	cp -Rv $(cinnamon_midnight_asset_menu_file) \
+		$(midnightdir)/cinnamon/assets/menu
+	cp -Rv $(cinnamon_midnight_asset_misc_file) \
+		$(midnightdir)/cinnamon/assets/misc
+	cp -Rv $(cinnamon_midnight_asset_panel_file) \
+		$(midnightdir)/cinnamon/assets/panel
+	cp -Rv $(cinnamon_midnight_asset_switch_file) \
+		$(midnightdir)/cinnamon/assets/switch
+	cp -Rv $(cinnamon_midnight_asset_thumb_file) \
+		$(midnightdir)/cinnamon/assets
+	cd $(midnightdir)/cinnamon && \
 		ln -sf ./assets/thumbnail.png thumbnail.png
 endif
 
@@ -787,16 +787,16 @@ endif
 
 uninstall-local:
 if ENABLE_GNOME
-	test -e $(noktodir)/gnome-shell && rm -rfv $(noktodir)/gnome-shell
+	test -e $(midnightdir)/gnome-shell && rm -rfv $(midnightdir)/gnome-shell
 	test -e $(briladir)/gnome-shell && rm -rfv $(briladir)/gnome-shell
 	test -e $(adaptadir)/gnome-shell && rm -rfv $(adaptadir)/gnome-shell
-	test -e $(noktoetadir)/gnome-shell && rm -rfv $(noktoetadir)/gnome-shell
+	test -e $(midnightetadir)/gnome-shell && rm -rfv $(midnightetadir)/gnome-shell
 	test -e $(brilaetadir)/gnome-shell && rm -rfv $(brilaetadir)/gnome-shell
 	test -e $(adaptaetadir)/gnome-shell && rm -rfv $(adaptaetadir)/gnome-shell
 endif
 
 if ENABLE_CINNAMON
-	test -e $(noktodir)/cinnamon && rm -rfv $(noktodir)/cinnamon
+	test -e $(midnightdir)/cinnamon && rm -rfv $(midnightdir)/cinnamon
 	test -e $(briladir)/cinnamon && rm -rfv $(briladir)/cinnamon
 	test -e $(adaptadir)/cinnamon && rm -rfv $(adaptadir)/cinnamon
 endif
@@ -810,40 +810,40 @@ if ENABLE_GNOME
 CLEANFILES += \
 	$(srcdir)/gnome-shell/gnome-shell.css \
 	$(srcdir)/gnome-shell-brila/gnome-shell.css \
-	$(srcdir)/gnome-shell-nokto/gnome-shell.css \
+	$(srcdir)/gnome-shell-midnight/gnome-shell.css \
 	$(srcdir)/gnome-shell-eta/gnome-shell.css \
 	$(srcdir)/gnome-shell-brila-eta/gnome-shell.css \
-	$(srcdir)/gnome-shell-nokto-eta/gnome-shell.css \
+	$(srcdir)/gnome-shell-midnight-eta/gnome-shell.css \
 	$(srcdir)/gnome-shell/pad-osd.css \
 	$(srcdir)/gnome-shell-brila/pad-osd.css \
-	$(srcdir)/gnome-shell-nokto/pad-osd.css \
+	$(srcdir)/gnome-shell-midnight/pad-osd.css \
 	$(srcdir)/gnome-shell-eta/pad-osd.css \
 	$(srcdir)/gnome-shell-brila-eta/pad-osd.css \
-	$(srcdir)/gnome-shell-nokto-eta/pad-osd.css \
+	$(srcdir)/gnome-shell-midnight-eta/pad-osd.css \
 	$(srcdir)/gnome-shell/extensions/window-list/stylesheet.css \
 	$(srcdir)/gnome-shell-brila/extensions/window-list/stylesheet.css \
-	$(srcdir)/gnome-shell-nokto/extensions/window-list/stylesheet.css \
+	$(srcdir)/gnome-shell-midnight/extensions/window-list/stylesheet.css \
 	$(srcdir)/gnome-shell-eta/extensions/window-list/stylesheet.css \
 	$(srcdir)/gnome-shell-brila-eta/extensions/window-list/stylesheet.css \
-	$(srcdir)/gnome-shell-nokto-eta/extensions/window-list/stylesheet.css \
+	$(srcdir)/gnome-shell-midnight-eta/extensions/window-list/stylesheet.css \
 	$(srcdir)/gnome-shell/extensions/window-list/classic.css \
 	$(srcdir)/gnome-shell-brila/extensions/window-list/classic.css \
-	$(srcdir)/gnome-shell-nokto/extensions/window-list/classic.css \
+	$(srcdir)/gnome-shell-midnight/extensions/window-list/classic.css \
 	$(srcdir)/gnome-shell-eta/extensions/window-list/classic.css \
 	$(srcdir)/gnome-shell-brila-eta/extensions/window-list/classic.css \
-	$(srcdir)/gnome-shell-nokto-eta/extensions/window-list/classic.css \
+	$(srcdir)/gnome-shell-midnight-eta/extensions/window-list/classic.css \
 	$(srcdir)/gnome-shell/extensions/workspaces-to-dock/workspaces-to-dock.css \
 	$(srcdir)/gnome-shell-brila/extensions/workspaces-to-dock/workspaces-to-dock.css \
-	$(srcdir)/gnome-shell-nokto/extensions/workspaces-to-dock/workspaces-to-dock.css \
+	$(srcdir)/gnome-shell-midnight/extensions/workspaces-to-dock/workspaces-to-dock.css \
 	$(srcdir)/gnome-shell-eta/extensions/workspaces-to-dock/workspaces-to-dock.css \
 	$(srcdir)/gnome-shell-brila-eta/extensions/workspaces-to-dock/workspaces-to-dock.css \
-	$(srcdir)/gnome-shell-nokto-eta/extensions/workspaces-to-dock/workspaces-to-dock.css \
+	$(srcdir)/gnome-shell-midnight-eta/extensions/workspaces-to-dock/workspaces-to-dock.css \
 	$(srcdir)/gnome-shell/gnome-shell-theme.gresource \
 	$(srcdir)/gnome-shell-brila/gnome-shell-theme.gresource \
-	$(srcdir)/gnome-shell-nokto/gnome-shell-theme.gresource \
+	$(srcdir)/gnome-shell-midnight/gnome-shell-theme.gresource \
 	$(srcdir)/gnome-shell-eta/gnome-shell-theme.gresource \
 	$(srcdir)/gnome-shell-brila-eta/gnome-shell-theme.gresource \
-	$(srcdir)/gnome-shell-nokto-eta/gnome-shell-theme.gresource \
+	$(srcdir)/gnome-shell-midnight-eta/gnome-shell-theme.gresource \
 	$(srcdir)/gnome-shell/*.svg \
 	$(srcdir)/gnome-shell/*.png \
 	$(srcdir)/gnome-shell/assets/*.svg \
@@ -852,10 +852,10 @@ CLEANFILES += \
 	$(srcdir)/gnome-shell-brila/*.png \
 	$(srcdir)/gnome-shell-brila/assets/*.svg \
 	$(srcdir)/gnome-shell-brila/extensions/workspaces-to-dock/assets/*.svg \
-	$(srcdir)/gnome-shell-nokto/*.svg \
-	$(srcdir)/gnome-shell-nokto/*.png \
-	$(srcdir)/gnome-shell-nokto/assets/*.svg \
-	$(srcdir)/gnome-shell-nokto/extensions/workspaces-to-dock/assets/*.svg \
+	$(srcdir)/gnome-shell-midnight/*.svg \
+	$(srcdir)/gnome-shell-midnight/*.png \
+	$(srcdir)/gnome-shell-midnight/assets/*.svg \
+	$(srcdir)/gnome-shell-midnight/extensions/workspaces-to-dock/assets/*.svg \
 	$(srcdir)/gnome-shell-eta/*.svg \
 	$(srcdir)/gnome-shell-eta/*.png \
 	$(srcdir)/gnome-shell-eta/assets/*.svg \
@@ -864,10 +864,10 @@ CLEANFILES += \
 	$(srcdir)/gnome-shell-brila-eta/*.png \
 	$(srcdir)/gnome-shell-brila-eta/assets/*.svg \
 	$(srcdir)/gnome-shell-brila-eta/extensions/workspaces-to-dock/assets/*.svg \
-	$(srcdir)/gnome-shell-nokto-eta/*.svg \
-	$(srcdir)/gnome-shell-nokto-eta/*.png \
-	$(srcdir)/gnome-shell-nokto-eta/assets/*.svg \
-	$(srcdir)/gnome-shell-nokto-eta/extensions/workspaces-to-dock/assets/*.svg \
+	$(srcdir)/gnome-shell-midnight-eta/*.svg \
+	$(srcdir)/gnome-shell-midnight-eta/*.png \
+	$(srcdir)/gnome-shell-midnight-eta/assets/*.svg \
+	$(srcdir)/gnome-shell-midnight-eta/extensions/workspaces-to-dock/assets/*.svg \
 	$(srcdir)/asset/assets-gnome-shell/common/checkbox-hover.svg \
 	$(srcdir)/asset/assets-gnome-shell/common/checkbox.svg \
 	$(srcdir)/asset/assets-gnome-shell/common/corner-ripple-ltr.svg \
@@ -890,10 +890,10 @@ if GNOME_IS_326_OR_NEWER
 CLEANFILES += \
 	$(srcdir)/gnome-shell/gdm3-Adapta.css \
 	$(srcdir)/gnome-shell-brila/gdm3-Adapta-Brila.css \
-	$(srcdir)/gnome-shell-nokto/gdm3-Adapta-Nokto.css \
+	$(srcdir)/gnome-shell-midnight/gdm3-Adapta-Midnight.css \
 	$(srcdir)/gnome-shell-eta/gdm3-Adapta-Eta.css \
 	$(srcdir)/gnome-shell-brila-eta/gdm3-Adapta-Brila-Eta.css \
-	$(srcdir)/gnome-shell-nokto-eta/gdm3-Adapta-Nokto-Eta.css
+	$(srcdir)/gnome-shell-midnight-eta/gdm3-Adapta-Midnight-Eta.css
 endif
 endif
 
@@ -901,13 +901,13 @@ if ENABLE_CINNAMON
 CLEANFILES += \
 	$(srcdir)/cinnamon/cinnamon.css \
 	$(srcdir)/cinnamon-brila/cinnamon.css \
-	$(srcdir)/cinnamon-nokto/cinnamon.css \
+	$(srcdir)/cinnamon-midnight/cinnamon.css \
 	$(srcdir)/cinnamon/assets/thumbnail.png \
 	$(srcdir)/cinnamon-brila/assets/thumbnail.png \
-	$(srcdir)/cinnamon-nokto/assets/thumbnail.png \
+	$(srcdir)/cinnamon-midnight/assets/thumbnail.png \
 	$(srcdir)/cinnamon/assets/*/*.svg \
 	$(srcdir)/cinnamon-brila/assets/*/*.svg \
-	$(srcdir)/cinnamon-nokto/assets/*/*.svg \
+	$(srcdir)/cinnamon-midnight/assets/*/*.svg \
 	$(srcdir)/asset/assets-cinnamon/common/checkbox/*.svg \
 	$(srcdir)/asset/assets-cinnamon/common/misc/add-workspace-active.svg \
 	$(srcdir)/asset/assets-cinnamon/common/misc/close.svg \

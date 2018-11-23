@@ -100,29 +100,29 @@ case "$1" in
         rm -f ../gtk-"$1"-brila-eta/"$xml"
         rm -rf ../gtk-"$1"-brila-eta/assets
 
-        cp "$xml_dark".in ../gtk-"$1"-nokto/"$xml"
-        sed -i "s|@VERSION[@]|$1|g" ../gtk-"$1"-nokto/"$xml"
-        sed -i "s|@VARIANT[@]|-nokto|g" ../gtk-"$1"-nokto/"$xml"
-        cd ../gtk-"$1"-nokto && ln -sf ../asset/assets-gtk3 assets && cd ../sass
-        $(command -v glib-compile-resources) --sourcedir=../gtk-"$1"-nokto \
-                                             ../gtk-"$1"-nokto/"$xml"
-        echo '@import url("resource:///org/adapta-project/gtk-'$1'-nokto/gtk-contained-dark.css");' \
-            > ../gtk-"$1"-nokto/gtk.css
+        cp "$xml_dark".in ../gtk-"$1"-midnight/"$xml"
+        sed -i "s|@VERSION[@]|$1|g" ../gtk-"$1"-midnight/"$xml"
+        sed -i "s|@VARIANT[@]|-midnight|g" ../gtk-"$1"-midnight/"$xml"
+        cd ../gtk-"$1"-midnight && ln -sf ../asset/assets-gtk3 assets && cd ../sass
+        $(command -v glib-compile-resources) --sourcedir=../gtk-"$1"-midnight \
+                                             ../gtk-"$1"-midnight/"$xml"
+        echo '@import url("resource:///org/adapta-project/gtk-'$1'-midnight/gtk-contained-dark.css");' \
+            > ../gtk-"$1"-midnight/gtk.css
 
-        rm -f ../gtk-"$1"-nokto/"$xml"
-        rm -rf ../gtk-"$1"-nokto/assets
+        rm -f ../gtk-"$1"-midnight/"$xml"
+        rm -rf ../gtk-"$1"-midnight/assets
 
-        cp "$xml_dark".in ../gtk-"$1"-nokto-eta/"$xml"
-        sed -i "s|@VERSION[@]|$1|g" ../gtk-"$1"-nokto-eta/"$xml"
-        sed -i "s|@VARIANT[@]|-nokto-eta|g" ../gtk-"$1"-nokto-eta/"$xml"
-        cd ../gtk-"$1"-nokto-eta && ln -sf ../asset/assets-gtk3 assets && cd ../sass
-        $(command -v glib-compile-resources) --sourcedir=../gtk-"$1"-nokto-eta \
-                                             ../gtk-"$1"-nokto-eta/"$xml"
-        echo '@import url("resource:///org/adapta-project/gtk-'$1'-nokto-eta/gtk-contained-dark.css");' \
-            > ../gtk-"$1"-nokto-eta/gtk.css
+        cp "$xml_dark".in ../gtk-"$1"-midnight-eta/"$xml"
+        sed -i "s|@VERSION[@]|$1|g" ../gtk-"$1"-midnight-eta/"$xml"
+        sed -i "s|@VARIANT[@]|-midnight-eta|g" ../gtk-"$1"-midnight-eta/"$xml"
+        cd ../gtk-"$1"-midnight-eta && ln -sf ../asset/assets-gtk3 assets && cd ../sass
+        $(command -v glib-compile-resources) --sourcedir=../gtk-"$1"-midnight-eta \
+                                             ../gtk-"$1"-midnight-eta/"$xml"
+        echo '@import url("resource:///org/adapta-project/gtk-'$1'-midnight-eta/gtk-contained-dark.css");' \
+            > ../gtk-"$1"-midnight-eta/gtk.css
 
-        rm -f ../gtk-"$1"-nokto-eta/"$xml"
-        rm -rf ../gtk-"$1"-nokto-eta/assets
+        rm -f ../gtk-"$1"-midnight-eta/"$xml"
+        rm -rf ../gtk-"$1"-midnight-eta/assets
         ;;
     *)
         usage && exit 1
