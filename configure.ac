@@ -25,7 +25,7 @@ AM_SILENT_RULES([yes])
 
 ADAPTA_OPTION([PARALLEL],     [parallel],     [parallel-build],      [disable])
 ADAPTA_OPTION([GTK_NEXT],     [gtk_next],     [Gtk-4.0],             [disable])
-ADAPTA_OPTION([GNOME],        [gnome],        [Gnome-Shell],         [enable])
+ADAPTA_OPTION([GNOME],        [gnome],        [Gnome-Shell],         [disable])
 ADAPTA_OPTION([CINNAMON],     [cinnamon],     [Cinnamon],            [enable])
 ADAPTA_OPTION([FLASHBACK],    [flashback],    [Flashback],           [enable])
 ADAPTA_OPTION([XFCE],         [xfce],         [XFce],                [enable])
